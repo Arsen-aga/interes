@@ -1,0 +1,161 @@
+.footer {
+  padding: 20px 0;
+
+  @include sm {
+    padding: 15px 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+
+    @include md {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  &__logo-text {
+    padding: 3px 15px;
+    padding-right: 0;
+    border-left: 1px solid rgba($color: #111111, $alpha: 0.2);
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+    font-weight: 300;
+  }
+
+  &__links {
+    max-width: 260px;
+    width: 100%;
+    display: grid;
+    gap: 12px;
+  }
+
+  &__rekv-text,
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+    position: relative;
+    width: fit-content;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 100%;
+      bottom: -1px;
+      background-color: #ADADAD;
+    }
+  }
+
+  &__ref {
+    display: grid;
+    gap: 13px;
+  }
+
+  &__rekv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__tfa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: .3;
+  }
+
+  &__tfa-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+  }
+
+  &__phone-num {
+    color: var(--default-color);
+    margin-bottom: 5px;
+  }
+
+
+  &__link,
+  &__tfa,
+  &__phone-num {
+    transition: all .3s ease-in-out;
+
+    &::before,
+    svg path {
+      transition: all .3s ease-in-out;
+    }
+
+
+    &:hover {
+      color: var(--primary);
+      opacity: 1;
+
+      svg path {
+        fill: var(--primary);
+      }
+
+      &::before {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  &__rekv-text,
+  &__rekv {
+    transition: all .3s ease-in-out;
+
+    &::before,
+    svg path {
+      transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--primary);
+      opacity: 1;
+
+      svg path {
+        stroke: var(--primary);
+      }
+
+      &::before {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+
+
+
+
+}

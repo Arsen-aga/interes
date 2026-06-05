@@ -1,0 +1,18 @@
+html, body {
+    min-height: 100vh;
+}
+
+.body_wrapper {
+  // max-width: 1920px;
+  margin: 0 auto;
+  width: 100% !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+}

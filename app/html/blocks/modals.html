@@ -1,0 +1,220 @@
+<div id="politics" style="display: none;" class="politics-modal fancybox__content">
+  <div class="modal__container">
+    <h3 class="politics-modal__title">Политика конфиденциальности</h3>
+    <div class="politics-modal__text">
+      <p>
+        Администрация данного Сайта не&nbsp;может передать или раскрыть информацию предоставленную пользователем
+        (далее Пользователь) при регистрации и&nbsp;использовании функций сайта третьим лицам, кроме случаев,
+        описанных законодательством страны, на&nbsp;территории которой пользователь ведет свою деятельность.
+      </p>
+      <p>
+        Для регистрации на&nbsp;сайте, пользователь обязан внести некоторую персональную информацию. Для проверки
+        предоставленных данных, сайт оставляет за&nbsp;собой право потребовать доказательства идентичности
+        в&nbsp;онлайн или офлайн режимах.
+      </p>
+      <p>
+        Сайт использует личную информацию Пользователя для обслуживания и&nbsp;для улучшения качества
+        предоставляемых услуг. Часть персональной информации может быть предоставлена банку или платежной системе,
+        в&nbsp;случае, если предоставление этой информации обусловлено процедурой перевода средств платежной
+        системе, услугами которой Пользователь желает воспользоваться.
+      </p>
+      <p>
+        Сайт прилагает все усилия для сбережения в&nbsp;сохранности личных данных Пользователя.
+        Личная информация может быть раскрыта в&nbsp;случаях, описанных законодательством, либо
+        когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного
+        распоряжения или легального процесса необходимого для работы Пользователя с&nbsp;Сайтом.
+      </p>
+      <p>
+        В&nbsp;других случаях, ни&nbsp;при каких условиях, информация, которую Пользователь передает Сайту,
+        не&nbsp;будет раскрыта третьим лицам.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="popup big-popup" id="callback" style="display: none;">
+  <div class="popup__inner big-popup__inner relative">
+    <div class="popup__left big-popup__left _image-wrapper">
+      <div class="popup__manager">
+        <div class="popup__manager-wrapper">
+          <img class="popup__manager-img" src="images/manager.webp" alt="manager">
+        </div>
+        <div class="popup__manager-info">
+          <h5 class="popup__manager-name">
+            Анатолий Гагилев
+          </h5>
+          <p class="popup__manager-text">
+            Руководитель проектов
+          </p>
+        </div>
+      </div>
+      <h2 class="popup__title">
+        Закажите<br>
+        обратный звонок
+      </h2>
+      <p class="popup__subtitle">
+        Наш специалист свяжется с вами<br>
+        в течение 5 минут или в удобное<br>
+        для вас время
+      </p>
+      <img class="popup__left-img" src="images/popup-phone.webp" alt="phone">
+    </div>
+    <form method="POST" action="#" enctype="multipart/form-data"
+      class="popup__form big-popup__form form form-submit _image-wrapper relative">
+      <div class="overlay"></div>
+      <input type="hidden" name="from" class="from" value="Запишитесь на демо-показ в своем городе">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <h2 class="popup__form-title">
+        Закажите <br>
+        обратный звонок
+      </h2>
+      <p class="popup__form-subtitle">
+        Наш специалист свяжется с вами<br>
+        в течение 5 минут или в удобное<br>
+        для вас время
+      </p>
+      <div class="popup__form-inner">
+        <div class="form__items popup__items">
+          <div class="form__item">
+            <input class="_input popup__form-inp" type="tel" name="phone" placeholder="Введите номер телефона" required>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Выберите способ связи:
+            </p>
+            <div class="form__labels">
+              <label class="form__label">
+                <input type="radio" name="call" value="Телефон">
+                <span class="form__label-inner tel">
+                  <span class="form__label-text">
+                    Телефон
+                  </span>
+                  <!-- @@include('../../images/icons/phone.svg') -->
+                </span>
+              </label>
+              <label class="form__label">
+                <input type="radio" name="call" value="WhatsApp" checked>
+                <span class="form__label-inner whatsapp">
+                  <span class="form__label-text">
+                    WhatsApp
+                  </span>
+                  <!-- @@include('../../images/icons/whatsapp.svg') -->
+                </span>
+              </label>
+                              <label class="form__label">
+                  <input type="radio" name="call" value="Max" checked>
+                  <span class="form__label-inner max">
+                    <span class="form__label-text">
+                      Max
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" fill="none" class="svelte-1p0ji45" width="20px" height="20px">
+                      <path fill="#fff" fill-rule="evenodd" d="M21.47 41.88c-4.11 0-6.02-.6-9.34-3-2.1 2.7-8.75 4.81-9.04 1.2 0-2.71-.6-5-1.28-7.5C1 29.5.08 26.07.08 21.1.08 9.23 9.82.3 21.36.3c11.55 0 20.6 9.37 20.6 20.91a20.6 20.6 0 0 1-20.49 20.67Zm.17-31.32c-5.62-.29-10 3.6-10.97 9.7-.8 5.05.62 11.2 1.83 11.52.58.14 2.04-1.04 2.95-1.95a10.4 10.4 0 0 0 5.08 1.81 10.7 10.7 0 0 0 11.19-9.97 10.7 10.7 0 0 0-10.08-11.1Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                </label>
+              <label class="form__label">
+                <input type="radio" name="call" value="Telegram">
+                <span class="form__label-inner telegram">
+                  <span class="form__label-text">
+                    Telegram
+                  </span>
+                  <!-- @@include('../../images/icons/telegram.svg') -->
+
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Выберите время звонка:
+            </p>
+            <div class="form__labels popup__labels-time time-check">
+              <label class="form__label popup__label-time">
+                <input type="radio" name="tab-time" value="Сейчас" checked>
+                <span class="form__label-inner popup__label-inner ">
+                  <span class="form__label-text">
+                    Сейчас
+                  </span>
+                </span>
+              </label>
+              <label class="form__label popup__label-time">
+                <input type="radio" name="tab-time" value="По времени">
+                <span class="form__label-inner popup__label-inner ">
+                  <span class="form__label-text">
+                    По времени
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Когда вам будет удобно принять звонок?
+            </p>
+            <input class="_input popup__inp-time time-input" type="text" name="time"
+              placeholder="Например, завтра в 12:00" disabled>
+            <button type="submit" class="form__btn popup__btn _main-btn">
+              Заказать обратный звонок
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-block form__checkbox">
+          <input type="checkbox" name="access" required checked>
+          <span class="checkbox-block__check">
+            <!-- @@include('../../images/icons/check.svg') -->
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия <a class="_link" href="/policy.php" target="_blank">политики
+              конфиденциальности</a> и <a href="/agrreement.php" target="_blank">пользовательское соглашение</a>
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="popup" id="change-number" style="display: none;">
+  <form method="POST" action="#" enctype="multipart/form-data"
+    class="popup__form form form-submit _image-wrapper relative">
+    <div class="overlay"></div>
+    <input type="hidden" name="from" class="from" value="Исправленный номер">
+    <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+    <h2 class="popup__form-title popup__show-title default-color">
+      Оставьте свой исправленный номер
+    </h2>
+    <div class="popup__form-inner">
+      <div class="form__bottom">
+        <input class="_input popup__form-inp" type="tel" name="phone" placeholder="Введите номер телефона" required>
+
+        <button type="submit" class="form__btn popup__btn _main-btn">
+          Отправить
+        </button>
+      </div>
+      <label class="checkbox-block form__checkbox">
+        <input type="checkbox" name="access" required checked>
+        <span class="checkbox-block__check">
+          <!-- @@include('../../images/icons/check.svg') -->
+        </span>
+        <span class="checkbox-block__text">
+          Я принимаю условия <a class="_link" href="/policy.php" target="_blank">политики
+            конфиденциальности</a> и <a href="/agrreement.php" target="_blank">пользовательское соглашение</a>
+        </span>
+      </label>
+    </div>
+
+  </form>
+</div>
+  <div class="popup" id="rekv" style="display: none;">
+    <h4 class="popup__title">
+      Реквизиты
+    </h4>
+    <ul class="popup__list list-point">
+      <li class="popup__point"><span>Краткое наименование:</span> ИП Крецу Александр Иванович</li>
+      <li class="popup__point"><span>Адрес электронной почты:</span> remvd@mail.ru</li>
+      <li class="popup__point"><span>Контактный телефон:</span>+7 927 939-50-00</li>
+      <li class="popup__point"><span>ИНН:</span> 027705023637</li>
+      <li class="popup__point"><span>ОГРНИП:</span> 322028000066362</li>
+      <li class="popup__point"><span>Наименование банка:</span> БАШКИРСКОЕ ОТДЕЛЕНИЕ №8598 ПАО СБЕРБАНК</li>
+      <li class="popup__point"><span>Расчетный счёт:</span> 40802810006000066831</li>
+      <li class="popup__point"><span>БИК банка:</span> 048073601</li>
+      <li class="popup__point"><span>Корр. счёт банка:</span> 30101810300000000601</li>
+    </ul>
+  </div>

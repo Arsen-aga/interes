@@ -1,0 +1,40 @@
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/nouislider/dist/nouislider';
+
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/containers';
+@import 'base/sticky-footer';
+@import 'base/base';
+@import 'base/titles';
+
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/front-block';
+@import 'blocks/specialization';
+@import 'blocks/get-started';
+@import 'blocks/implement-projects';
+@import 'blocks/any-components';
+@import 'blocks/manufacturing-times';
+@import 'blocks/maintaining-quality';
+@import 'blocks/furniture-installation';
+@import 'blocks/reviews';
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'blocks/footer';
+@import 'blocks/modals';

@@ -1,0 +1,71 @@
+:root {
+  // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
+
+  // контейнер
+  --container-width: 1440px;
+  --container-padding: 15px;
+
+  // шрифты
+  --font-default: 'Google Sans';
+
+  // размер шрифта
+  --defaul-font-size: 18px;
+  --defaul-line-height: 144%;
+
+  @media (max-width: 468px) {
+    --defaul-font-size: 16px;
+  }
+
+  // брекпоинты
+  --xxl: 1470px;
+  --xl: 1230px;
+  --lg: 991.8px;
+  --md: 767.98px;
+  --sm: 575.98px;
+  --xs: 468px;
+
+  // глобаьлные цвета
+  --page-bg: #FFFFFF;
+  --default-color: #252A36;
+  --link-color: #252A36;
+
+  // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
+
+  --primary: #ef4e06;
+  --accent: #da1f3e;
+	--gray: #cbd4dd;
+  --text-color: var(--default-color);
+  --light-color: #FFFFFF;
+  --vk-color: #0077FF;
+  --telegram-color: #35A9E5;
+	--green: #72a348;
+	--blue: #08c;
+  
+  
+
+  --primary-hover: #cc4507;
+  --telegram-hover: #54C0F8;
+
+
+
+
+  // Отступы для блоков
+  --indent: 110px;
+  --indent-front: 100px;
+  
+  @media (max-width: 1230px) {
+    --indent: 80px;
+    --indent-front: 80px;
+  }
+  
+  @media (max-width: 991.8px) {
+    --indent: 40px;
+    --indent-front: 60px;
+  }
+
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

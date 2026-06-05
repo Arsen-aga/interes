@@ -1,0 +1,126 @@
+.manufacturing-times {
+  padding-top: var(--indent);
+  border-bottom: 1px solid var(--gray);
+
+  @include xl {
+    border-bottom: none;
+  }
+
+  &__items {
+    display: grid;
+    padding: 0 55px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 110px;
+
+    @include xxl {
+      gap: 60px;
+      padding: 0;
+    }
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    padding-bottom: var(--indent);
+    display: flex;
+    flex-direction: column;
+
+    @include xxl {
+      padding-bottom: 60px;
+    }
+
+    @include xl {
+      padding: 15px;
+      border: 1px solid var(--gray);
+    }
+
+    @include lg {
+      width: 300px;
+    }
+
+    &:not(:last-child) .manufacturing-times__wrapper-img::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 480px;
+      right: -55px;
+      top: 0;
+      background-color: var(--gray);
+
+      @include xxl {
+        right: -30px;
+      }
+
+      @include xl {
+        display: none;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--primary);
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--gray);
+
+    @include xxl {
+      font-size: 28px;
+      padding-bottom: 15px;
+    }
+
+    @include xl {
+      font-size: 24px;
+      padding-bottom: 10px;
+    }
+
+    @include lg {
+      font-size: 22px;
+    }
+
+    @include sm {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    margin: 25px 0 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    @include xxl {
+      margin: 15px 0 20px;
+    }
+
+    @include xl {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    @include lg {
+      margin: 10px 0;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__wrapper-img {
+    margin-top: auto;
+    position: relative;
+    padding-bottom: 100%;
+  }
+}

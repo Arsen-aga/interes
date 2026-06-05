@@ -1,0 +1,95 @@
+._main-title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 113%;
+
+  @include xl {
+    font-size: 62px;
+  }
+
+  @include lg {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  @include md {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  @include sm {
+    font-size: 30px;
+  }
+}
+
+._title {
+  font-family: var(--font-default);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 113%;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include xl {
+    font-size: 42px;
+    margin-bottom: 35px;
+  }
+
+  @include lg {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    font-size: 30px;
+    margin-bottom: 25px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include sm {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+._subtitle {
+  font-family: var(--font-default);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  margin: 15px 0 40px;
+
+  @include xl {
+    margin-bottom: 35px;
+  }
+
+  @include lg {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    font-size: 24px;
+    margin-bottom: 25px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include sm {
+    font-size: 22px;
+    margin: 10px 0 15px;
+  }
+
+  @include xs {
+    font-size: 20px;
+  }
+
+}

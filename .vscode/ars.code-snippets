@@ -1,0 +1,257 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  },
+  /* Media xl */
+  "mediaXXl": {
+    "scope": "css,scss",
+    "prefix": "xxl",
+    "body": [
+      "@include xxl {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "xl"
+  },
+  /* Media xl */
+  "mediaXl": {
+    "scope": "css,scss",
+    "prefix": "xl",
+    "body": [
+      "@include xl {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "xl"
+  },
+  /* Media lg */
+  "mediaLg": {
+    "scope": "css,scss",
+    "prefix": "lg",
+    "body": [
+      "@include lg {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "lg"
+  },
+  /* Media md */
+  "mediaMd": {
+    "scope": "css,scss",
+    "prefix": "md",
+    "body": [
+      "@include md {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "md"
+  },
+  /* Media sm */
+  "mediaSm": {
+    "scope": "css,scss",
+    "prefix": "sm",
+    "body": [
+      "@include sm {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "sm"
+  },
+  /* Media xs */
+  "mediaXs": {
+    "scope": "css,scss",
+    "prefix": "xs",
+    "body": [
+      "@include xs {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "xs"
+  },
+  "hover": {
+    "scope": "css,scss",
+    "prefix": "@hover",
+    "body": [
+      "@include hover {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "hover"
+  },
+  "grid-cols": {
+    "scope": "css,scss",
+    "prefix": "grid-cols",
+    "body": [
+      "&__items {",
+      "  display: grid;",
+      "  grid-template-columns: repeat(3, 1fr);",
+      "  gap: 30px;",
+      "  @include xl {",
+      "    gap: 15px;",
+      "  }",
+      "  @include lg {",
+      "    gap: 10px;",
+      "    padding-bottom: 10px;",
+      "    grid-auto-flow: column;",
+      "    overflow-x: auto;",
+      "  }",
+      "}",
+      "&__item {",
+      "  @include lg {",
+      "    width: 300px;",
+      "  }",
+      "}",
+    ],
+    "description": "grid-cols"
+  },
+  /* CSS, SCSS snippets */
+  "bgimg: Background image": {
+    "scope": "css,scss",
+    "prefix": "bgimg",
+    "body": [
+      "background-image: url('..${1:/}');",
+      "background-position: center center;",
+      "background-size: cover;",
+      "background-repeat: no-repeat;",
+      "$2"
+    ],
+    "description": "bgimg: Background image"
+  },
+  "bgicon: Background icon": {
+    "scope": "css,scss",
+    "prefix": "bgicon",
+    "body": [
+      "background-image: url('./..${1:/}');",
+      "background-position: 20px 10px; /* x y */",
+      "background-size: auto;",
+      "background-repeat: no-repeat;",
+      "$2"
+    ],
+    "description": "bgicon: Background icon"
+  },
+  "abscent: Absolute center position": {
+    "scope": "css,scss",
+    "prefix": "abscent",
+    "body": [
+      "position: absolute;",
+      "left: 50%;",
+      "top: 50%;",
+      "transform: translate(-50%, -50%);",
+      "$1"
+    ],
+    "description": "abscent: Absolute center position"
+  },
+  "absov: Absolute Overlay": {
+    "scope": "css,scss",
+    "prefix": "absov",
+    "body": [
+      "position: absolute;",
+      "left: 0px;",
+      "top: 0px;",
+      "width: 100%;",
+      "height: 100%;",
+      "background-color:rgba(0, 0, 0, 0.5);",
+      "$1"
+    ],
+    "description": "absov: Absolute Overlay"
+  },
+  "trans: Transition": {
+    "scope": "css,scss",
+    "prefix": "trans",
+    "body": [
+      "transition: all 0.3s ease-in-out;",
+      "$1"
+    ],
+    "description": "trans: Transition"
+  },
+  "imp: Import CSS / SCSS": {
+    "scope": "css,scss",
+    "prefix": "imp",
+    "body": [
+      "@import '.${1:/}';",
+      "$2"
+    ],
+    "description": "imp: Import CSS / SCSS"
+  },
+  "HTML section": {
+    "scope": "html",
+    "prefix": "sect",
+    "body": [
+      "<section class=\"${1:example}\">",
+			"	<div class=\"container\">",
+			"		<h2 class=\"${1:example}__title _title\">${2:title}</h2>",
+			"		<p class=\"${1:example}__subtitle _subtitle\">${2:subtitle}</p>",
+			"		<div class=\"${1:example}__inner\">",
+			"			Content",
+			"		</div>",
+			"		@@include('../components/cursor.html')",
+			"		<div class=\"${1:example}__items\">",
+			"		  <div class=\"${1:example}__item\">",
+		  "       <img class=\"${1:example}__item-img _img\" src=\"images/${1:example}-1.webp\" alt=\"${1:example}-1\">",
+      "       <div class=\"overlay\"></div>",
+      "       <div class=\"${1:example}__item-inner\">",
+      "         <h4 class=\"${1:example}__item-title\">",
+      "         </h4>",
+      "         <p class=\"${1:example}__item-text\">",
+      "         </p>",
+      "       </div>",
+			"		  </div>",
+			"		</div>",
+      "  <div class=\"${1:example}__items\">",
+      "    <div class=\"${1:example}__item\">",
+      "      <div class=\"${1:example}__item-wrapper\">",
+      "        <img class=\"${1:example}__item-img _img\" src=\"images/maintaining-quality-1.webp\" alt=\"maintaining-quality-1\">",
+      "      </div>",
+      "      <div class=\"${1:example}__item-info\">",
+      "        <h4 class=\"${1:example}__item-title\">",
+      "        </h4>",
+      "        <p class=\"${1:example}__item-text\">",
+      "        </p>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+			"	</div>",
+      "</section>"
+    ],
+    "description": "HTML section"
+  },
+  "HTML swiper": {
+    "prefix": "swiper",
+    "body": [
+      "<div class=\"${1:example}__swiper swiper\">",
+			"	<div class=\"swiper-wrapper\">",
+			"		<div class=\"${1:example}__slide swiper-slide\">",
+			"			${4:Content}",
+			"		</div>",
+			"	</div>",
+      " <div class=\"swiper-pagination\"></div>",
+      " <div class=\"swiper-button-prev\"></div>",
+      " <div class=\"swiper-button-next\"></div>",
+      " <div class=\"swiper-scrollbar\"></div>",
+      "</div>"
+    ],
+    "description": "HTML section"
+  },
+  "HTML popup": {
+    "prefix": "popup",
+    "body": [
+      "<section class=\"popup popup-${1:example}\" id=\"${1:example}\" style=\"display: none;\">",
+      "</section>"
+    ],
+    "description": "HTML popup"
+  },
+}

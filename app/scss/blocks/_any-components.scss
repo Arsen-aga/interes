@@ -1,0 +1,36 @@
+.any-components{
+  padding-top: var(--indent);
+
+  &__title{
+    margin-bottom: 0;
+  }
+
+  &__inner{
+    background-image: url('../images/any-components-bg.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 31.25%;
+    min-height: 280px;
+  }
+
+  &__btn{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    max-width: 360px;
+
+    @include lg {
+        bottom: 30px;
+    }
+
+    @include sm {
+        max-width: 320px;
+    }
+  }
+}

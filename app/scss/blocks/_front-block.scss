@@ -1,0 +1,162 @@
+.front-block {
+  background-image: url(../images/front-block-bg.webp);
+  padding-top: var(--indent-front);
+  position: relative;
+  overflow: hidden;
+
+  .overlay {
+    @include lg {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+
+
+  &__title {
+    margin-bottom: 40px;
+    color: var(--light-color);
+
+    @include xl {
+      margin-bottom: 30px;
+    }
+
+    @include lg {
+      margin-bottom: 15px;
+    }
+
+    @include md {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include sm {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__btn {
+    max-width: 270px;
+  }
+
+  &__items {
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+    @include xxl {
+      margin-top: 50px;
+    }
+
+    @include lg {
+      margin-top: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      border: none;
+    }
+
+    @include md {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include sm {
+      margin-top: 15px;
+    }
+  }
+
+  &__item {
+    padding: 25px 25px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      border: none;
+    }
+
+    @include xl {
+      padding: 25px;
+    }
+
+    @include lg {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2) {
+        border-right: none;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    @include md {
+      padding: 15px;
+      gap: 10px;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @include sm {
+        flex-direction: row;
+        gap: 20px;
+    }
+  }
+
+  &__item-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    
+    @include xs {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      min-height: 36px;        
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--light-color);
+    text-align: center;
+
+    span {
+      font-weight: 600;
+    }
+
+    @include xl {
+      font-size: 18px;
+    }
+
+    @include lg {
+      br {
+        display: none;
+      }
+    }
+
+    @include sm {
+        text-align: left;
+    }
+
+    @include xs {
+      font-size: 16px;
+    }
+  }
+}

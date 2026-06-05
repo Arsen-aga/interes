@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <meta content="images/social.png" property="og:image">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="body_wrapper">
+    <header class="header @@class">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            @@include('../components/logo.html')
+            @@include('../components/social-block.html', {'class': 'header__social-block'})
+            @@include('../components/phone-block.html')
+            <a class="header__top-btn _transparent-btn" href="#">
+              @@include('../../images/icons/calc.svg')
+              <span>Получить быстрый расчет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Шкафы на заказ
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Кухни на заказ
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Мебель на заказ
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Салоны
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    О нас
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Клиентам
+                  </a>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">test</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Дизайнерам
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Бизнесу
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link anchor" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__bottom-links">
+              <a class="header__bottom-link" href="#">
+                @@include('../../images/icons/search.svg')
+              </a>
+              <a class="header__bottom-link" href="#">
+                @@include('../../images/icons/heart.svg')
+              </a>
+            </div>
+            <div class="burger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup-menu">
+      <div class="burger popup-menu__burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="popup-menu__nav">
+        <ul class="popup-menu__list">
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Шкафы на заказ
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Кухни на заказ
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Мебель на заказ
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Салоны
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Клиентам
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Дизайнерам
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Бизнесу
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      @@include('../components/social-block.html', {"class": "popup-menu__social"})
+      @@include('../components/phone-block.html', {"class": "popup-menu__phone"})
+    </div>

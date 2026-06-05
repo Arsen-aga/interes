@@ -1,0 +1,41 @@
+/* Контейнеры */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 var(--container-padding);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+}
+
+@include xxl {  
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@include xl {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@include lg {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@include md {
+  .container {
+    max-width: 540px;
+    padding-inline: 15px;
+  }
+}
+
+@include sm {
+  .container {
+    max-width: 100%;
+  }
+}

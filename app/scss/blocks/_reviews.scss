@@ -1,0 +1,96 @@
+.reviews {
+  padding: var(--indent) 0;
+
+  &__top-img {
+    position: absolute;
+    top: 45px;
+    left: 6.5%;
+  }
+
+  &__filters-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__filters-btn {
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 15px;
+    transition: all 0.3s ease-in-out;
+
+    svg path {
+      transition: all 0.3s ease-in-out;
+    }
+
+    svg path[fill="#111111"],
+    svg path[fill=white] {
+      &:not(:last-child) {
+        fill: var(--default-color);
+      }
+    }
+
+    g svg path[fill=white] {
+      fill: var(--light-color);
+    }
+
+    &.active {
+      background-color: var(--default-color);
+      box-shadow: inset 0px -6px 10px rgba(255, 255, 255, 0.05);
+
+      svg path[fill="#111111"],
+      svg path[fill=white] {
+        fill: var(--light-color);
+      }
+
+      g svg path[fill=white] {
+        fill: var(--light-color);
+      }
+    }
+  }
+
+  &__filters-logo {
+    height: fit-content;
+  }
+
+  &__swiper {
+    max-width: 1266px;
+    margin: 0 auto;
+  }
+
+  .filters-item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__slide {
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__bottom {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+}

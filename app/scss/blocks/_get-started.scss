@@ -1,0 +1,97 @@
+.get-started {
+  padding: var(--indent) 0;
+  background-color: #f9f9f9;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
+
+    @include xxl {
+      min-height: 600px;
+    }
+
+    @include xl {
+      min-height: 550px;
+
+      .overlay {
+        display: block;
+      }
+    }
+
+    @include lg {
+      width: 300px;
+    }
+
+    @include sm {
+        min-height: 500px;
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+
+    @include xxl {
+      padding: 30px;
+    }
+
+    @include xl {
+      padding: 25px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+
+    @include xxl {
+      font-size: 26px;
+    }
+
+    @include xl {
+      font-size: 22px;
+    }
+
+    @include sm {
+        font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    margin-top: 15px;
+
+    @include xl {
+      margin-top: 10px;
+    }
+  }
+
+  &__item-btn {
+    margin-top: 20px;
+    height: 70px;
+
+    @include xl {
+      margin-top: 15px;
+    }
+  }
+}

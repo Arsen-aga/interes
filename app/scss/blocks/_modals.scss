@@ -1,0 +1,415 @@
+.politics-modal {
+  max-width: 600px !important;
+  background-color: var(--light-color) !important;
+  color: var(--default-color) !important;
+
+  &__title {
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include sm {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    display: grid;
+    gap: 15px;
+
+    @include sm {
+      gap: 8px;
+    }
+  }
+}
+
+.popup {
+  max-width: 500px;
+  padding: 0;
+  background-color: var(--light-color);
+  border: none;
+
+  &__inner {
+    display: block;
+  }
+
+  &__left {
+    display: none;
+  }
+
+  &__manager {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__manager-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+
+    @include lg {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+        min-height: 90px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #4CB34C;
+      border: 3px solid var(--light-color);
+      right: 17px;
+      bottom: 9px;
+    }
+  }
+
+  &__manager-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__manager-info {
+    color: var(--light-color);
+  }
+
+  &__manager-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(26/18*100%);
+    margin-bottom: 5px;
+  }
+
+  &__manager-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+  }
+
+  &__title,
+  &__subtitle {
+    color: var(--light-color);
+  }
+
+  &__left-img {
+    margin-top: auto;
+  }
+
+  &__title,
+  &__form-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(40/32*100%);
+    margin-bottom: 15px;
+
+    &.default-color{
+      color: var(--default-color);
+    }
+
+    @include xl {
+      font-size: 30px;
+    }
+
+    @include lg {
+      font-size: 26px;
+    }
+
+    @include md {
+      font-size: 24px;
+    }
+
+    @include sm {
+      font-size: 22px;
+    }
+  }
+
+  &__subtitle,
+  &__form-subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: calc(28/20*100%);
+    margin-bottom: 18px;
+
+    @include lg {
+      br {
+        display: none;
+      }
+    }
+
+    @include md {
+      margin-bottom: 15px;
+    }
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  &__form {
+    background-color: var(--light-color);
+    padding: 50px;
+    max-width: 500px;
+    width: 100%;
+
+    @include lg {
+      max-width: none;
+    }
+
+    @include sm {
+      padding: 30px;
+    }
+
+    @include xs {
+      padding: 25px;
+    }
+  }
+
+  &__form-title,
+  &__form-subtitle {
+    display: none;
+
+    @include md {
+      display: block;
+      color: var(--default-color);
+    }
+  }
+
+  &__items{
+    gap: 20px;
+  }
+
+  &__form-text {
+    color: #939393;
+  }
+
+  &__label {
+
+
+    &:hover,
+    input:checked+.form__label-inner {
+      color: var(--light-color) !important;
+
+      svg {
+        g {
+          transition: all .3s;
+          opacity: 1;
+        }
+
+        path {
+          transition: all .3s;
+          fill: var(--light-color);
+        }
+      }
+
+      &.phone {
+        color: var(--default-color) !important;
+
+        svg {
+          g {
+            transition: all .3s;
+            opacity: 1;
+          }
+
+          path {
+            transition: all .3s;
+            fill: var(--default-color);
+          }
+        }
+      }
+    }
+
+    input:checked+.phone {
+      background-color: var(--primary);
+    }
+
+    input:checked+.whatsapp {
+      background-color: var(--bg-green);
+    }
+
+    input:checked+.telegram {
+      background-color: #35A9E5;
+    }
+  }
+
+  &__label-inner {
+    color: #999999;
+
+    svg path {
+      fill: #999999;
+    }
+  }
+
+  &__label-time {
+    max-width: 129px;
+    width: 100%;
+
+    &:hover .form__label-inner,
+    input:checked+.form__label-inner {
+      color: var(--default-color);
+      font-weight: 700;
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+  }
+
+  &__inp-time {
+
+    &:disabled {
+      background-color: #E8E9EB;
+      border: 1px solid #F1F1F1;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(26/18*100%);
+        color: var(--default-color);
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 10px;
+    max-width: none;
+  }
+
+  &__show-title {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--light-color);
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      margin-bottom: 15px;
+    }
+  }
+
+
+}
+
+.big-popup {
+  max-width: 964px;
+  padding: 0;
+  width: 100%;
+
+  @include md {
+    max-width: 500px;
+  }
+
+  &__inner {
+    overflow: hidden;
+    display: flex;
+
+    @include xs {
+      border-radius: 16px;
+    }
+  }
+
+  &__left {
+    padding: 50px 50px 0 50px;
+    background-image: url(../images/popup-bg.webp);
+    display: flex;
+    flex-direction: column;
+    max-width: 464px;
+    width: 100%;
+
+    @include lg {
+      padding: 30px 30px 0 30px;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__form {
+    padding: 50px;
+    color: var(--light-color);
+
+    @include sm {
+      padding: 30px;
+    }
+
+    @include xs {
+      padding: 25px;
+    }
+  }
+
+}
+
+#calc {
+  .popup {
+
+    &__form{
+      padding: 60px;
+      max-width: none;
+
+      @include sm {
+          padding: 30px;
+      }
+    }
+
+    &__form-title,
+    &__form-subtitle {
+      display: block;
+      max-width: 420px;
+    }
+
+    &__form-subtitle {
+      margin-bottom: 30px;
+
+      @include md {
+          margin-bottom: 20px;
+      }
+
+      @include sm {
+          margin-bottom: 10px;
+      }
+    }
+
+    &__form-inner{
+      max-width: 420px;
+      z-index: 1;
+    }
+
+    &__form-bottom{
+      margin-top: 10px;
+    }
+
+    &__btn{
+      max-width: none;
+    }
+
+    &__img{
+      position: absolute;
+      right: 24px;
+      bottom: 0;
+      width: 58.5%;
+    }
+  }
+}
+
+#rekv{
+  padding: 30px;
+  color: var(--default-color);
+  .popup__title{
+    color: var(--default-color);
+  }
+}
+.fancybox__content:has(iframe){
+  height: 90% !important;
+}

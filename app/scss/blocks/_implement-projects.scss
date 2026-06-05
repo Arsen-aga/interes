@@ -1,0 +1,18 @@
+.implement-projects{
+  background-image: url('../images/implement-projects-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: var(--indent) 0;
+  position: relative;
+
+  @include md {
+      .overlay{display: block;}
+  }
+
+  &__title, &__subtitle{
+    margin-bottom: 0;
+    text-align: left;
+    max-width: 625px;
+  }
+}
