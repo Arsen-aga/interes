@@ -1,0 +1,47 @@
+.trust-furniture {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-wrapper{
+    position: relative;
+    padding-bottom: calc(210/300*100%);
+    overflow: hidden;
+  }
+
+  &__item-info{
+    padding: 20px 10px 0;
+  }
+
+  &__item-title{
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,112 @@
+.free-create {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @include xxl {
+      gap: 10px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: calc(600/351*100%);
+    overflow: hidden;
+    min-height: 320px;
+
+    @include xl {
+      .overlay {
+        display: block;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    @include lg {
+      width: 300px;
+      padding-bottom: 140%;
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+
+    @include xxl {
+      padding: 15px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+
+    @include xxl {
+      font-size: 26px;
+    }
+
+    @include xl {
+      font-size: 24px;
+    }
+  }
+
+  &__item-text {
+    margin-top: 15px;
+
+    @include xxl {
+      br {
+        display: none;
+      }
+    }
+
+    @include xl {
+      margin-top: 10px;
+    }
+  }
+
+  &__inner {
+    max-width: 1600px;
+    margin: var(--indent) auto 0;
+    padding: var(--indent) 0;
+    background-image: url('../images/free-create-bg.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @include md {
+      .overlay {
+        display: block;
+      }
+    }
+
+  }
+  &__inner-info{
+    position: relative;
+  }
+
+  &__inner-title,
+  &__inner-text {
+    margin-bottom: 0;
+    text-align: left;
+    max-width: 625px;
+  }
+}

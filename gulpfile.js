@@ -33,9 +33,9 @@ function pages() {
 
 function styles() {
   return src("app/scss/style.scss")
+  .pipe(scss({ outputStyle: "compressed" }))
       .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
       .pipe(concat("style.min.css"))
-      .pipe(scss({ outputStyle: "compressed" }))
       .pipe(dest("app/css"))
       .pipe(browserSync.stream())
 }
@@ -67,22 +67,21 @@ function scripts() {
 
 function images() {
   return src("app/images/_src/**/*.*")
-    .pipe(newer("app/images/"))
+    .pipe(newer({
+      dest: "app/images/",
+      ext: ".webp"
+    }))
     .pipe(webp())
     .pipe(dest("app/images/"));
 }
 
 
 function fonts() {
-  return src("app/fonts/_src/*.*")
-    .pipe(
-      fonter({
-        formats: ["woff", "ttf"],
-      })
-    )
-    .pipe(src("app/fonts/*.ttf"))
-    .pipe(ttf2woff2())
-    .pipe(dest("app/fonts"));
+  return src("app/fonts/_src/*.{ttf,otf}")  // 1. Берем исходники
+    .pipe(fonter({ formats: ["woff", "ttf"] })) // 2. Конвертируем в woff и ttf
+    .pipe(dest("app/fonts"))                 // 3. Сохраняем обычные форматы
+    .pipe(ttf2woff2())                       // 4. Берем ТЕ ЖЕ файлы из потока и конвертируем в woff2
+    .pipe(dest("app/fonts"));                // 5. Сохраняем woff2
 }
 
 function watching() {
@@ -92,7 +91,6 @@ function watching() {
     },
   });
   watch(["app/scss/**/*.scss", ], styles);
-  watch(["app/images/_src/"], images);
   watch(["app/js/_src/*.js"], scripts);
   watch(["app/html/**/*.html", "app/images/icons/*.svg"], pages);
   watch(["app/**/*.html"]).on("change", browserSync.reload);

@@ -5,6 +5,11 @@
     position: absolute;
     top: 45px;
     left: 6.5%;
+
+    @include xxl {
+        opacity: 0.5;
+        max-height: 250px;
+    }
   }
 
   &__filters-btns {
@@ -13,6 +18,14 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+
+    @include lg {
+        margin-bottom: 15px;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
   }
 
   &__filters-btn {
@@ -23,7 +36,20 @@
     align-items: center;
     gap: 10px;
     padding: 11px 15px;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
+    background-color: var(--page-bg);
+
+    @include lg {
+        height: 70px;
+        max-width: 230px;
+    }
+
+    img{
+      @include lg {
+          max-width: 100px;
+      }
+    }
 
     svg path {
       transition: all 0.3s ease-in-out;
@@ -91,6 +117,25 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+
+    @include xxl {
+        flex-wrap: wrap;
+    }
+
+    @include xl {
+        margin-top: 30px;
+    }
+
+    @include lg {
+        margin-top: 20px;
+    }
   }
+
+  &__bottom-img{
+    @include md {
+        max-height: 52px;
+    }
+  }
+  
 
 }

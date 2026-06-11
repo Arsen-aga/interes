@@ -34,7 +34,7 @@ function initializeMap() {
     var myMap = new ymaps.Map(
       mapElement,
       {
-        center: [54.754649, 56.023140],
+        center: [56.842995, 60.698799],
         zoom: 18,
       },
       {
@@ -43,14 +43,14 @@ function initializeMap() {
     );
 
     var destinations = {
-      "г. Уфа,  просп. Салавата Юлаева, 99/1, офис 609": [54.754649, 56.023140],
+      "Интерес. г. Екатеринбург, ул. Высоцкого, 50 ТК \"КОР\"": [56.842995, 60.698799],
     };
 
     var myPlacemark = new ymaps.Placemark(
-      destinations["г. Уфа,  просп. Салавата Юлаева, 99/1, офис 609"],
+      destinations["Интерес. г. Екатеринбург, ул. Высоцкого, 50 ТК \"КОР\""],
       {
         hintContent: "Офис",
-        balloonContent: "г. Уфа,  просп. Салавата Юлаева, 99/1, офис 609",
+        balloonContent: "Интерес. г. Екатеринбург, ул. Высоцкого, 50 ТК \"КОР\"",
       },
       {
         iconLayout: "default#image",

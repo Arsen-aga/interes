@@ -1,0 +1,101 @@
+.project-videos {
+  padding: var(--indent) 0;
+  background-color: #F9F9F9;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: calc(624/351*100%);
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+
+    @include lg {
+      width: 280px;
+      height: 400px;
+      padding: 0;
+    }
+
+    p,
+    img {
+      transition: all 0.5s ease-in-out;
+    }
+
+    @include hover {
+
+      img {
+        scale: 1.5;
+      }
+
+      .play__inner {
+        scale: 1.2;
+      }
+
+      p {
+        color: var(--primary);
+      }
+
+    }
+  }
+
+  &__item-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include xxl {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    @include xl {
+        gap: 10px;
+    }
+  }
+
+  .play {
+    position: static;
+    height: auto;
+    width: auto;
+
+    &__inner{
+      @include xl {
+          width: 70px;
+          height: 70px;
+      }
+    }
+  }
+
+  &__item-text {
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: var(--light-color);
+
+    @include xl {
+        font-size: 16px;
+        br{
+          display: none;
+        }
+    }
+  }
+}

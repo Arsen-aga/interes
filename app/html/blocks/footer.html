@@ -1,41 +1,190 @@
-<footer class="footer" >
-  <div class="container" style="display: none;">
-    <div class="footer__inner">
-      <div class="footer__logo-wrapper">
-        <!-- @@include('../components/logo-dark.html', {"class": "footer__logo"}) -->
-        <p class="footer__logo-text">
-          Дизайнерский<br>
-          ремонт
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__row">
+        <div class="footer__start">
+          @@include('../components/logo-white.html')
+          <div class="footer__start-links">
+            <a class="footer__start-link _link" href="#">
+              Шкафы на заказ
+            </a>
+            <a class="footer__start-link _link" href="#">
+              Кухни на заказ
+            </a>
+            <a class="footer__start-link _link" href="#">
+              Жилые зоны
+            </a>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title">
+              Салоны
+            </h4>
+            <ul class="footer__menu-list list-point">
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Салон в МЦ «ЭМА»
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Салон в ТЦ «Космос»
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Салон в МЦ «Гулливер»
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Салон в ТК «КОР»
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Салон в ТЦ «Белка Маркет»
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title">
+              О нас
+            </h4>
+            <ul class="footer__menu-list list-point">
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Реализованные проекты
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Производство
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Для дизайнеров
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Вакансии
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-col">
+            <h4 class="footer__menu-title">
+              Клиентам
+            </h4>
+            <ul class="footer__menu-list list-point">
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Как мы работаем
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Бесплатный замер
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Доставка и монтаж
+                </a>
+              </li>
+              <li class="footer__menu-point">
+                <a class="footer__menu-link _link" href="#">
+                  Гарантия и обслуживание
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__ui">
+          <div class="footer__ui-top">
+            @@include('../components/social-block.html', {'class': 'footer__social-block'})
+            @@include('../components/phone-block.html', {'class': 'footer__phone-block'})
+          </div>
+          <div class="footer__ui-bottom">
+            <a class="footer__ui-btn" href="#callback" data-fancybox>
+              Перезвоните мне
+            </a>
+            <div class="footer__ui-links">
+              <a class="footer__ui-link" href="#">
+                @@include('../../images/icons/calc.svg')
+                <span>Получить быстрый расчет</span>
+              </a>
+              <a class="footer__ui-link" href="#">
+                @@include('../../images/icons/heart.svg')
+                <span>Избранное</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__center">
+        <p class="footer__center-copy">
+          © Фабрика «Интерес», 2026
         </p>
+        <div class="footer__center-links">
+          <a class="footer__center-link _link" href="#politics" data-fancybox>
+            Политика конфиденциальности
+          </a>
+          <a class="footer__center-link _link" href="#">
+            Согласие на обработку персональных данных
+          </a>
+          <a class="footer__center-link _link" href="#">
+            Политика использования файлов Cookie
+          </a>
+          <a class="footer__center-link _link" href="#">
+            Согласие на получение рекламной информации
+          </a>
+        </div>
+        <div class="footer__center-socials">
+          <h4 class="footer__menu-title">
+            Социальные сети:
+          </h4>
+          <div class="footer__center-soc">
+            <a class="footer__center-social" href="#" target="_blank">
+              @@include('../../images/icons/vk.svg')
+            </a>
+            <a class="footer__center-social" href="#" target="_blank">
+              @@include('../../images/icons/tg.svg')
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer__links">
-        <a class="footer__link" href="#politics" data-fancybox>
-          Политика конфиденциальности
-        </a>
-        <a class="footer__link" href="#">
-          Обработка персональных данных
-        </a>
-      </div>
-      <div class="footer__ref">
-        <a class="footer__rekv" href="#rekv" data-fancybox>
-          <!-- @@include('../../images/icons/list.svg') -->
-          <span class="footer__rekv-text">Реквизиты компании</span>
-        </a>
-        <a class="footer__tfa" href="#" target="_blank">
-          <!-- @@include('../../images/icons/tfa.svg') -->
-          <span class="footer__tfa-text">Разработка сайта</span>
-        </a>
-      </div>
-
-      <div class="phone-block footer__phone">
-        <a class="phone-block__num footer__phone-num" href="tel:+79279395000">
-          +7 927 939 50 00
-        </a>
-        <a class="phone-block__link" href="#callback" data-fancybox="">
-          Вам перезвонить?
-        </a>
-      </div>
-
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        Данный сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и
+        цены,<br>
+        размещенные на сайте, не являются публичной офертой, определяемой положениями Статей 435 и 437 гражданского
+        кодекса РФ.
+      </p>
+      <a class="footer__tfa _link _white-text" href="#" target="_blank">
+        @@include('../../images/icons/tfa.svg')
+        <span class="footer__tfa-text">Разработка сайта</span>
+      </a>
     </div>
   </div>
 </footer>

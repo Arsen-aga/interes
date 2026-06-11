@@ -1,89 +1,327 @@
 .footer {
-  padding: 20px 0;
+  background-color: var(--default-color);
 
-  @include sm {
-    padding: 15px 0;
-  }
+  &__top {
+    padding: 70px 0 75px;
 
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-
-    @include xl {
-      gap: 10px;
-    }
-
-    @include lg {
-      flex-wrap: wrap;
+    @include xxl {
+      padding: 40px 0;
     }
 
     @include md {
-      flex-wrap: nowrap;
-      flex-direction: column;
+      padding: 30px 0;
     }
   }
 
-  &__logo {
-    display: inline-flex;
-  }
-
-  &__logo-wrapper {
+  &__row {
     display: flex;
-    align-items: end;
-    gap: 15px;
-    max-width: 340px;
-    width: 100%;
+    align-items: start;
+
+    @include xl {
+      flex-wrap: wrap;
+    }
+
+    @include lg {
+      gap: 20px;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
   }
 
-  &__logo-text {
-    padding: 3px 15px;
-    padding-right: 0;
-    border-left: 1px solid rgba($color: #111111, $alpha: 0.2);
+  &__start-links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include xxl {
+      margin-top: 20px;
+    }
+
+    @include lg {
+      margin-top: 10px;
+      gap: 5px;
+    }
+  }
+
+  &__start-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--light-color);
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: 25px;
+
+    @include xxl {
+      gap: 10px;
+      margin-right: 10px;
+    }
+
+    @include lg {
+      order: 1;
+    }
+
+    @include md {
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 0;
+    }
+
+    @include sm {
+        order: 0;
+    }
+  }
+
+  &__menu-title {
+    font-weight: 600;
     font-size: 16px;
-    line-height: calc(24/16*100%);
-    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--light-color);
   }
 
-  &__links {
-    max-width: 260px;
-    width: 100%;
+  &__menu-list {
+    margin-top: 10px;
     display: grid;
-    gap: 12px;
+    gap: 7px;
   }
 
-  &__rekv-text,
-  &__link {
+  &__menu-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--light-color);
+  }
+
+  &__ui {
+    @include lg {
+      margin-left: auto;
+    }
+
+    @include sm {
+        margin: 0;
+    }
+  }
+
+  &__ui-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include xxl {
+      gap: 15px;
+    }
+  }
+
+  .social-block {
+    @include xxl {
+      gap: 15px;
+    }
+
+    svg {
+      transition: all 0.3s ease-in-out;
+
+      path {
+        fill: var(--light-color);
+      }
+    }
+
+    &__link {
+      &:hover {
+        svg {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+
+  &__phone-block {
+    color: var(--light-color);
+
+    @include xxl {
+      font-size: 22px;
+    }
+  }
+
+  &__ui-bottom {
+    margin-top: 10px;
+    margin-left: auto;
+    max-width: 235px;
+    width: 100%;
+  }
+
+  &__ui-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    max-width: 180px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(24/16*100%);
-    position: relative;
-    width: fit-content;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
 
-    &::before {
-      position: absolute;
-      content: '';
-      height: 1px;
-      width: 100%;
-      bottom: -1px;
-      background-color: #ADADAD;
+    @include hover {
+      color: rgba(255, 255, 255, 1);
+      background-color: var(--primary);
+      border-color: rgba(255, 255, 255, 0);
     }
   }
 
-  &__ref {
-    display: grid;
-    gap: 13px;
+  &__ui-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include xxl {
+      margin-top: 20px;
+      gap: 15px;
+    }
   }
 
-  &__rekv {
+  &__ui-link {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
 
-    svg {
-      width: 22px;
-      height: 22px;
+    svg path {
+      transition: all 0.3s ease-in-out;
+      stroke: var(--light-color);
+    }
+
+    @include hover {
+      color: var(--primary);
+
+      svg path {
+        stroke: var(--primary);
+      }
+    }
+  }
+
+  &__center {
+    margin-top: 20px;
+    display: flex;
+    align-items: start;
+
+    @include lg {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__center-copy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light-color);
+  }
+
+  &__center-links {
+    margin-left: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 705px;
+    gap: 20px 40px;
+
+    @include xxl {
+      margin-left: 20px;
+      max-width: 680px;
+      gap: 15px;
+    }
+
+    @include xl {
+      max-width: 430px;
+      gap: 10px;
+      order: -1;
+      margin-left: 0;
+    }
+
+    @include lg {
+      order: 1;
+    }
+  }
+
+  &__center-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    color: var(--light-color);
+    opacity: 0.4;
+  }
+
+  &__center-socials {
+    max-width: 235px;
+    width: 100%;
+    margin-left: auto;
+
+    @include lg {
+      margin-left: 0;
+    }
+  }
+
+  &__center-soc {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__center-social {
+    transition: all 0.3s ease-in-out;
+
+    @include hover {
+      scale: 1.2;
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0;
+    border-top: 1px solid rgba($color: #FFFFFF, $alpha: 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lg {
+      padding: 20px 0;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+
+  &__bottom-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: rgba($color: #FFFFFF, $alpha: 0.4);
+
+    @include xl {
+      max-width: 600px;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -95,67 +333,10 @@
   }
 
   &__tfa-text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16*100%);
+    line-height: 138%;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
   }
-
-  &__phone-num {
-    color: var(--default-color);
-    margin-bottom: 5px;
-  }
-
-
-  &__link,
-  &__tfa,
-  &__phone-num {
-    transition: all .3s ease-in-out;
-
-    &::before,
-    svg path {
-      transition: all .3s ease-in-out;
-    }
-
-
-    &:hover {
-      color: var(--primary);
-      opacity: 1;
-
-      svg path {
-        fill: var(--primary);
-      }
-
-      &::before {
-        background-color: var(--primary);
-      }
-    }
-  }
-
-  &__rekv-text,
-  &__rekv {
-    transition: all .3s ease-in-out;
-
-    &::before,
-    svg path {
-      transition: all .3s ease-in-out;
-    }
-
-    &:hover {
-      color: var(--primary);
-      opacity: 1;
-
-      svg path {
-        stroke: var(--primary);
-      }
-
-      &::before {
-        background-color: var(--primary);
-      }
-    }
-  }
-
-
-
-
-
 }

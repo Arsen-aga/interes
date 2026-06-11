@@ -1,0 +1,115 @@
+.front-block-thankyou {
+  padding: var(--indent-front) 0;
+  background-image: url('../images/front-block-thankyou-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .overlay{
+    @include xl {
+        display: block;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+  }
+
+
+  &__subtitle {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 127%;
+
+    @include xl {
+        font-size: 28px;
+    }
+
+    @include lg {
+      margin-top: 15px;
+        font-size: 26px;
+    }
+
+    @include md {
+      margin-top: 10px;
+        font-size: 22px;
+    }
+
+    @include sm {
+        font-size: 20px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__info {
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    
+    @include lg {
+        margin-top: 20px;
+    }
+
+    @include md {
+        margin-top: 15px;
+    }
+  }
+
+  &__info-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  &__info-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+
+    @include sm {
+        font-size: 16px;
+    }
+  }
+
+  &__btns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+
+    @include lg {
+        margin-top: 15px;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background: #FAFBFC;
+    border: 1px solid #F1F1F1;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+    text-align: center;
+
+    @include md {
+        font-size: 24px;
+        height: 70px;
+    }
+
+    @include sm {
+        max-width: 300px;
+        font-size: 20px;
+        height: 65px;
+    }
+  }
+}

@@ -1,11 +1,19 @@
 class WheelInSwiper {
   constructor(element, swiperOption) {
-    this.element = document.querySelector(element);
+    this.element = typeof element === 'string' ? document.querySelector(element) : element;
     this.swiperOption = swiperOption;
     this.swiper;
     this.wheelTimeout;
 
     this.initWheelSwiper();
+  }
+
+  get currentSlide() {
+    return this.swiper ? this.swiper.activeIndex : null;
+  }
+
+  get getSwiper() {
+    return this.swiper;
   }
 
   initWheelSwiper() {
@@ -164,15 +172,87 @@ new WheelInSwiper(".team__swiper", {
   },
 });
 */
-new WheelInSwiper(".reviews__swiper", {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 15,
-  speed: 1000,
-  touchEventsTarget: "container",
-  navigation: {
-    nextEl: ".reviews__filters .reviews__next",
-    prevEl: ".reviews__filters .reviews__prev",
-  },
-}
-)
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector(".reviews__swiper")) {
+    new WheelInSwiper(".reviews__swiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      speed: 1000,
+      touchEventsTarget: "container",
+      navigation: {
+        nextEl: ".reviews__filters .reviews__next",
+        prevEl: ".reviews__filters .reviews__prev",
+      },
+      breakpoints: {
+        575.98: {
+          slidesPerView: 2,
+        },
+        991.8: {
+          slidesPerView: 3,
+        },
+      },
+    })
+  }
+
+  const allBrandedSalonsItems = document.querySelectorAll(".branded-salons__item");
+
+  if (allBrandedSalonsItems.length) {
+    allBrandedSalonsItems.forEach(wrapper => {
+      const thumb = wrapper.querySelector('.branded-salons__thumbswiper')
+      const swiper = wrapper.querySelector('.branded-salons__swiper')
+      const brandedSalonsThumbSwiper = new WheelInSwiper(thumb, {
+        spaceBetween: 8,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          767.98: {
+            slidesPerView: 7,
+          },
+        },
+      });
+      new WheelInSwiper(swiper, {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: brandedSalonsThumbSwiper.getSwiper,
+        },
+      });
+    })
+  }
+  if (document.querySelector(".favorites__swiper")) {
+
+    new WheelInSwiper(".favorites__swiper", {
+      loop: false,
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      speed: 1000,
+      touchEventsTarget: "container",
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+  }
+  const favoriteSwipers = document.querySelectorAll(".favorites__swiper-images")
+
+  if (favoriteSwipers && favoriteSwipers.length) {
+    favoriteSwipers.forEach(favoriteSwiper => {
+      new Swiper(favoriteSwiper, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        touchEventsTarget: "container",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      })
+    })
+  }
+
+})
