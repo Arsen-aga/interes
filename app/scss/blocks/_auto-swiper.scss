@@ -1,0 +1,14 @@
+.auto-swiper {
+  .swiper-slide {
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: calc(330 / 500 * 100%);
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,52 @@
+.front-block-catalog{
+  background-image: url('../images/front-block-catalog-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: var(--indent-front) 0 70px;
+
+  @include lg {
+      padding-bottom: 40px;
+  }
+
+  &__title{
+    margin-bottom: 0;
+  }
+
+  &__btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+
+    @include xs {
+        flex-direction: column;
+    }
+  }
+
+  &__btn{
+    max-width: 270px;
+
+    @include xs {
+        max-width: 300px;
+    }
+  }
+
+  &__swiper{
+    margin-top: 70px;
+
+    @include xl {
+        margin-top: 50px;
+    }
+
+    @include lg {
+        margin-top: 40px;
+    }
+
+    @include md {
+        margin-top: 30px;
+    }
+  }
+}

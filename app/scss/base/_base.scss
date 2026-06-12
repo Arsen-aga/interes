@@ -469,7 +469,7 @@ a {
   height: 10px !important;
   border-radius: 0;
   background-color: #E7E7E7;
-
+  
   .swiper-scrollbar-drag {
     height: 10px;
     background: var(--primary);
@@ -480,6 +480,7 @@ a {
 .swiper-horizontal>.swiper-scrollbar {
   left: 0;
   width: 100%;
+  bottom: 0;
 }
 
 .section-img {

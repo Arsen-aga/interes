@@ -254,5 +254,46 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
+  const chooseDirectionSwipers = document.querySelectorAll(".choose-direction__swiper")
+
+  if (chooseDirectionSwipers && chooseDirectionSwipers.length) {
+    chooseDirectionSwipers.forEach(chooseDirectionSwiper => {
+      new WheelInSwiper(chooseDirectionSwiper, {
+        loop: false,
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        touchEventsTarget: "container",
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+    })
+  }
+
+  new Swiper(".auto-swiper__inner", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    initialSlide: 3,
+    centeredSlides: true,
+    speed: 1000,
+    mousewheel: {
+      enabled: true,
+      eventsTarget: ".auto-swiper__inner", // или 'container'
+      forceToAxis: true, // только горизонтальная прокрутка
+    },
+    touchEventsTarget: "container",
+    autoplay: {
+      delay: 2000,
+    },
+    breakpoints: {
+      540: {
+        slidesPerView: 3,
+      },
+      750: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
 })

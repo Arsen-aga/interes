@@ -18,8 +18,6 @@
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/front-block';
-@import 'blocks/front-block-thankyou';
-@import 'blocks/favorites';
 @import 'blocks/specialization';
 @import 'blocks/get-started';
 @import 'blocks/implement-projects';
@@ -34,8 +32,13 @@
 @import 'blocks/map-block';
 @import 'blocks/free-create';
 @import 'blocks/produce-furniture';
+@import 'blocks/choose-direction';
 
 
+@import 'blocks/front-block-thankyou';
+@import 'blocks/favorites';
+@import 'blocks/front-block-catalog';
+@import 'blocks/auto-swiper';
 
 
 
