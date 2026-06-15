@@ -1,0 +1,724 @@
+<section class="filter-block">
+  <div class="container">
+    <div class="filter-block__inner">
+      <form class="filter-block__form form-submit" action="#">
+        <button class="filter-block__close-filter _main-btn close-filter" type="button">
+         x
+        </button>
+        <div class="filter-block__elems accordion open-one-at-time">
+          <div class="filter-block__elem accordion-item">
+            <div class="filter-block__elem-header accordion-header">
+              <div class="filter-block__elem-left">
+                <h4 class="filter-block__elem-title">
+                  Форма кухни
+                </h4>
+              </div>
+              <div class="open-item filter-block__elem-icon">
+                @@include('../../images/icons/arrow-accordion.svg')
+              </div>
+            </div>
+            <div class="filter-block__elem-body accordion-body">
+              <div class="filter-block__labels">
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="forma" value="Любая">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Любая
+                    </span>
+                  </label>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="forma" value="Прямая">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Прямая
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    34
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="forma" value="Угловая">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Угловая
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    6
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="forma" value="П-образная">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      П-образная
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    52
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="forma" value="С островом">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      С островом
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    8
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-block__elem accordion-item">
+            <div class="filter-block__elem-header accordion-header">
+              <div class="filter-block__elem-left">
+                <h4 class="filter-block__elem-title">
+                  Размер
+                </h4>
+              </div>
+              <div class="open-item filter-block__elem-icon">
+                @@include('../../images/icons/arrow-accordion.svg')
+              </div>
+            </div>
+            <div class="filter-block__elem-body accordion-body">
+              <div class="filter-block__labels">
+                <div class="filter-block__label range-wrapper">
+                  <p class="filter-block__label-title">
+                    Ширина, мм
+                  </p>
+                  <div class="filter-block__label-inputs">
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="width">
+                    -
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="width">
+                  </div>
+                  <div class="filter-block__label-range range-slider" data-range-min="0" data-range-max="26500"></div>
+                </div>
+                <div class="filter-block__label range-wrapper">
+                  <p class="filter-block__label-title">
+                    Глубина, мм
+                  </p>
+                  <div class="filter-block__label-inputs">
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="depth">
+                    -
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="depth">
+                  </div>
+                  <div class="filter-block__label-range range-slider" data-range-min="200" data-range-max="6000"></div>
+                </div>
+                <div class="filter-block__label range-wrapper">
+                  <p class="filter-block__label-title">
+                    Высота, мм
+                  </p>
+                  <div class="filter-block__label-inputs">
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="height">
+                    -
+                    <input class="filter-block__label-input range-option" type="text" value="0" name="height">
+                  </div>
+                  <div class="filter-block__label-range range-slider" data-range-min="850" data-range-max="2840"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-block__elem accordion-item">
+            <div class="filter-block__elem-header accordion-header">
+              <div class="filter-block__elem-left">
+                <h4 class="filter-block__elem-title">
+                  Цвет
+                </h4>
+              </div>
+              <div class="open-item filter-block__elem-icon">
+                @@include('../../images/icons/arrow-accordion.svg')
+              </div>
+            </div>
+            <div class="filter-block__elem-body accordion-body">
+              <div class="filter-block__labels">
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Любой">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Любой
+                    </span>
+                  </label>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Комбинированный">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Комбинированный
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    12
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Белый">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Белый
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    11
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Черный">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Черный
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    23
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Серый">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Серый
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    17
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Под дерево">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Под дерево
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    5
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Зеленый">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Зеленый
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    3
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="color" value="Синий">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Синий
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    3
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-block__elem accordion-item">
+            <div class="filter-block__elem-header accordion-header">
+              <div class="filter-block__elem-left">
+                <h4 class="filter-block__elem-title">
+                  Фасад
+                </h4>
+              </div>
+              <div class="open-item filter-block__elem-icon">
+                @@include('../../images/icons/arrow-accordion.svg')
+              </div>
+            </div>
+            <div class="filter-block__elem-body accordion-body">
+              <div class="filter-block__labels">
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="Любой">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Любая
+                    </span>
+                  </label>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="ЛДСП">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Прямая
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    12
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="МДФ">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      Угловая
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    11
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="Пластик">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      П-образная
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    23
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="Шпон">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      С островом
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    17
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="Стекло">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      С островом
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    5
+                  </a>
+                </div>
+                <div class="filter-block__label">
+                  <label class="checkbox-block">
+                    <input type="checkbox" name="fasad" value="Комбинированные">
+                    <span class="checkbox-block__check">
+                      @@include('../../images/icons/check.svg')
+                    </span>
+                    <span class="checkbox-block__text">
+                      С островом
+                    </span>
+                  </label>
+                  <a class="filter-block__label-link" href="#">
+                    3
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-block__form-btns">
+          <button type="submit" class="filter-block__form-btn _main-btn">
+            Применить
+          </button>
+          <button class="filter-block__form-reset">
+            Сбросить
+          </button>
+        </div>
+      </form>
+      <button class="filter-block__open-filter _main-btn open-filter" type="button">
+        Открыть фильтр
+      </button>
+      <div class="filter-block__right">
+        <div class="filter-block__items">
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button active">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button active">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+          <div class="favorites__item filter-block__item">
+            <div class="favorites__item-wrapper">
+              <div class="favorites__swiper-images swiper">
+                <div class="swiper-wrapper">
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-1.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-1.webp" alt="favorites-1">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-2.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-2.webp" alt="favorites-2">
+                    </a>
+                  </div>
+                  <div class="favorites__slide swiper-slide">
+                    <a class="favorites__slide-wrapper" href="images/favorites-3.webp" data-fancybox="favorites-1">
+                      <img class="favorites__slide-img _img" src="images/favorites-3.webp" alt="favorites-3">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <span class="favorites__item-discount">Скидка %</span>
+              </div>
+            </div>
+            <div class="favorites__item-info">
+              <a class="favorites__item-link" href="#">
+                <h4 class="favorites__item-title">
+                  Угловая встроенная кухня<br>
+                  с чёрной алюминиевой рамкой и ручкой Gola
+                </h4>
+              </a>
+              <p class="favorites__item-price">
+                Цена: <span>350 000 ₽</span>
+              </p>
+              <ul class="favorites__item-list">
+                <li class="favorites__item-point">Форма: <span>угловая</span></li>
+                <li class="favorites__item-point">Цвет: <span>серый, зеленый</span></li>
+                <li class="favorites__item-point">Фасад: <span>Пластик</span></li>
+              </ul>
+              <div class="favorites__item-btns">
+                <a class="favorites__item-btn _main-btn" href="#callback" data-fancybox="">
+                  Быстрый заказ
+                </a>
+                <a class="favorites__item-btn _red-btn" href="#callback" data-fancybox="">
+                  Рассчитать стоимость
+                </a>
+              </div>
+              <button class="favorites__item-button">
+                <span>У вас в избранном</span>
+                @@include('../../images/icons/heart.svg')
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="filter-block__right-btn _gray-btn">
+          <span>Открыть больше позиций</span>
+          @@include('../../images/icons/window.svg')
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

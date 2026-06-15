@@ -194,9 +194,12 @@
         margin-top: 10px;
     }
 
-    svg path{
-      fill: var(--accent);
-      stroke: var(--accent);
+    &.active{
+      svg path{
+        fill: var(--accent);
+        stroke: var(--accent);
+      }
     }
+
   }
 }

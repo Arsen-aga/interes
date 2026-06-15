@@ -1,0 +1,11 @@
+.front-block-category{
+  padding: var(--indent-front) 0;
+  background-image: url('../images/front-block-category-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title{
+    text-align: center;
+  }
+}

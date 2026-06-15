@@ -92,6 +92,7 @@ function watching() {
   });
   watch(["app/scss/**/*.scss", ], styles);
   watch(["app/js/_src/*.js"], scripts);
+  watch(["app/images/_src/*.*"], images);
   watch(["app/html/**/*.html", "app/images/icons/*.svg"], pages);
   watch(["app/**/*.html"]).on("change", browserSync.reload);
 }

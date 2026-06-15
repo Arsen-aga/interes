@@ -232,6 +232,65 @@ a {
     box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
   }
 }
+._gray-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--font-default);
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray);
+  transition: all 0.3s ease-in-out;
+
+  @include xl {
+    height: 90px;
+  }
+
+  @include lg {
+    height: 80px;
+    max-width: 340px;
+  }
+
+  @include md {
+    height: 70px;
+    font-size: 14px;
+  }
+
+  @include sm {
+    height: 65px;
+    max-width: 300px;
+  }
+
+  svg path {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: var(--primary);
+    box-shadow: 0px 20px 40px rgba(250, 185, 0, 0.2),
+      inset 0px 10px 25px rgba(255, 255, 255, 0.2);
+    color: var(--light-color);
+    border-color: var(--light-color);
+
+    svg path {
+      stroke: var(--light-color);
+    }
+  }
+
+  &:active {
+    background-color: var(--primary);
+    box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
+  }
+}
 
 ._main-btn {
   display: flex;
@@ -500,7 +559,57 @@ a {
 
   }
 }
+.checkbox-block {
+  display: flex;
+  justify-content: center;
+  gap: 7.5px;
+  cursor: pointer;
+  font-size: 12px;
 
+  input {
+    display: none !important;
+  }
+
+  input:checked+span svg {
+    scale: 1;
+  }
+
+  &__check {
+    margin-top: 2px;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999999;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(20 / 12 * 100%);
+    color: var(--gray);
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      color: var(--primary);
+    }
+  }
+
+  svg {
+    scale: 0;
+    transition: all 0.3s ease-in-out;
+    width: 9px;
+    height: 6px;
+
+    path {
+      fill: var(--primary);
+    }
+  }
+}
 
 
 
@@ -868,57 +977,7 @@ a {
   }
 }
 
-.checkbox-block {
-  display: flex;
-  justify-content: center;
-  gap: 7.5px;
-  cursor: pointer;
-  font-size: 12px;
 
-  input {
-    display: none !important;
-  }
-
-  input:checked+span svg {
-    scale: 1;
-  }
-
-  &__check {
-    margin-top: 2px;
-    min-width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #999999;
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(20 / 12 * 100%);
-    color: #939393;
-
-    a {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      color: var(--primary);
-    }
-  }
-
-  svg {
-    scale: 0;
-    transition: all 0.3s ease-in-out;
-    width: 9px;
-    height: 6px;
-
-    path {
-      fill: var(--primary);
-    }
-  }
-}
 
 
 
