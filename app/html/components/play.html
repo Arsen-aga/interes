@@ -1,5 +1,14 @@
 <div class="play">
   <div class="play__inner">
     @@include('../../images/icons/play.svg')
+    <svg class="play__text" viewBox="0 0 200 200" width="160" height="160" data-text="@@text">
+      <path id="text-path" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF"
+        text-transform="uppercase">
+        <textPath href="#text-path" startOffset="5%">
+          @@text
+        </textPath>
+      </text>
+    </svg>
   </div>
 </div>

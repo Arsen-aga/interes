@@ -295,5 +295,49 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
   });
+  new Swiper(".front-block-single__swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    touchEventsTarget: "container",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.front-block-single__right .swiper-pagination',
+    },
+  })
+  new WheelInSwiper(".salon-before__swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    touchEventsTarget: "container",
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.salon-before__swiper .swiper-pagination',
+    },
+  })
+  new Swiper(".realistic-3d-project__swiper", {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    initialSlide: 1,
+    centeredSlides: true,
+    speed: 1000,
+    mousewheel: {
+      enabled: true,
+      eventsTarget: ".realistic-3d-project__swiper", // или 'container'
+      forceToAxis: true, // только горизонтальная прокрутка
+    },
+    touchEventsTarget: "container",
+    autoplay: {
+      delay: 2000,
+    },
+  });
 
 })

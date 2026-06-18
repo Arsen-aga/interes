@@ -232,6 +232,7 @@ a {
     box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
   }
 }
+
 ._gray-btn {
   display: flex;
   justify-content: center;
@@ -503,8 +504,14 @@ a {
       height: 60px;
     }
   }
+
+  &__text[data-text=""],
+  &__text[data-text="@@text"] {
+    display: none !important;
+  }
 }
 
+.list-point-red,
 .list-point {
   li {
     position: relative;
@@ -524,11 +531,20 @@ a {
   }
 }
 
+.list-point-red {
+  li {
+    &::before {
+      background-color: var(--accent);
+      border-radius: 0;
+    }
+  }
+}
+
 .swiper-scrollbar {
   height: 10px !important;
   border-radius: 0;
   background-color: #E7E7E7;
-  
+
   .swiper-scrollbar-drag {
     height: 10px;
     background: var(--primary);
@@ -551,14 +567,15 @@ a {
     margin-top: 50px;
   }
 
-  img{
+  img {
 
     @include xs {
-        object-position: left;
+      object-position: left;
     }
 
   }
 }
+
 .checkbox-block {
   display: flex;
   justify-content: center;
@@ -611,9 +628,31 @@ a {
   }
 }
 
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 
+  .swiper-pagination-bullet {
+    margin: 0 !important;
+    max-width: 7px;
+    width: 100%;
+    height: 7px;
+    background-color: #E7E7E7;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
 
+  .swiper-pagination-bullet-active {
+    background-color: var(--accent);
+  }
+}
 
+.mt-indent {
+  margin-top: var(--indent);
+}
 
 
 
@@ -670,34 +709,6 @@ a {
     box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
   }
 }
-
-
-
-
-
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-
-  .swiper-pagination-bullet {
-    margin: 0;
-    max-width: 40px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--light-color);
-    border-radius: 2px;
-    transition: all 0.3s ease-in-out;
-    opacity: 1;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: var(--primary);
-  }
-}
-
-
 
 .magnifier {
   position: absolute;
@@ -975,12 +986,4 @@ a {
       font-size: 14px;
     }
   }
-}
-
-
-
-
-
-.mt-indent {
-  margin-top: var(--indent);
 }

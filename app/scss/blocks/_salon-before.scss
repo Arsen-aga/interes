@@ -1,0 +1,47 @@
+.salon-before {
+  padding-top: var(--indent);
+
+  &__wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @include xxl {
+      padding: 0 15px;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding-bottom: calc(800/1600*100%);
+    overflow: hidden;
+
+    @include sm {
+      padding-bottom: 63%;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 40px;
+
+    @include sm {
+      bottom: 20px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 40px;
+
+    @include sm {
+      left: 20px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 40px;
+
+    @include sm {
+      right: 20px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.front-block-salon {
+  padding: 50px 0;
+  background-color: var(--default-color);
+
+  @include md {
+      padding: 40px 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include lg {
+        flex-direction: column;
+    }
+  }
+
+  &__left {
+    @include xxl {
+      padding: 20px 0;
+    }
+
+    @include lg {
+        padding: 20px 0 0;
+        width: 100%;
+    }
+  }
+
+  &__title{
+    @include lg {
+        br{display: none;}
+    }
+  }
+
+  &__items {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+
+    @include xxl {
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    @include lg {
+        margin-top: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__item-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__item-title {
+    font-weight: 500;
+  }
+
+  &__item-text {
+    margin-top: 5px;
+  }
+
+  &__btn {
+    margin-top: 40px;
+    max-width: 320px;
+
+    @include xxl {
+      margin-top: 30px;
+    }
+
+    @include lg {
+        margin-top: 20px;
+    }
+  }
+
+  &__right {
+    max-width: 656px;
+    width: 100%;
+
+    @include xxl {
+      max-width: 525px;
+    }
+
+    @include xl {
+      max-width: 400px;
+    }
+
+    @include lg {
+        max-width: none;
+    }
+  }
+
+  &__video {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+
+    @include lg {
+        padding-bottom: 62%;
+    }
+
+    .play {
+      &__inner {
+        width: 160px;
+        height: 160px;
+
+        @include xl {
+          width: 100px;
+          height: 100px;
+        }
+
+        @include sm {
+            width: 60px;
+            height: 60px;
+        }
+      }
+
+      svg {
+        width: 22px;
+
+        @include sm {
+            width: fit-content;
+        }
+      }
+
+      svg {
+
+        &.play__text {
+          position: absolute;
+          width: 145px;
+          height: 145px;
+
+          @include xl {
+            width: 90px;
+            height: 90px;
+          }
+
+          @include sm {
+              width: 55px;
+              height: 55px;
+          }
+        }
+
+        textPath {
+          font-size: 16px;
+          line-height: calc(12/32*100%);
+          font-weight: 700;
+          color: var(--light-color);
+          text-transform: uppercase;
+        }
+      }
+
+
+    }
+  }
+}

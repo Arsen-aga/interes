@@ -1,0 +1,56 @@
+<section class="front-block-salon relative">
+  @@include('../components/breadcrumbs.html', {
+  "links": [
+  { "title": "Салоны «Интерес»" }
+  ],
+  "last": "МЦ «ЭМА»"
+  })
+  <div class="container">
+    <div class="front-block-salon__inner _white-text">
+      <div class="front-block-salon__left">
+        <h2 class="front-block-salon__title _main-title">
+          Фирменный<br>
+          салон «Интерес»<br>
+          в МЦ «ЭМА»
+        </h2>
+        <div class="front-block-salon__items">
+          <div class="front-block-salon__item">
+            <div class="front-block-salon__item-icon">
+              @@include('../../images/icons/front-position.svg')
+            </div>
+            <div class="front-block-salon__item-info">
+              <h4 class="front-block-salon__item-title">
+                Адрес:
+              </h4>
+              <p class="front-block-salon__item-text">
+                г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА», 2 этаж
+              </p>
+            </div>
+          </div>
+          <div class="front-block-salon__item">
+            <div class="front-block-salon__item-icon">
+              @@include('../../images/icons/clock.svg')
+            </div>
+            <div class="front-block-salon__item-info">
+              <h4 class="front-block-salon__item-title">
+                Время работы:
+              </h4>
+              <p class="front-block-salon__item-text">
+                11:00-20:00
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="front-block-salon__btn _main-btn" href="#callback" data-fancybox>
+          Записаться на встречу
+        </a>
+      </div>
+      <div class="front-block-salon__right">
+        <a class="front-block-salon__video" href="images/front-block-salon-1.webp" data-fancybox>
+          <img class="front-block-salon__img _img" src="images/front-block-salon-1.webp" alt="front-block-salon-1">
+          @@include('../components/play.html', {"text": "Посмотрите видео о фирменном салоне «Интерес»"})
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

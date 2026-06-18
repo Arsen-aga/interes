@@ -1,0 +1,98 @@
+.questions {
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+  background-image: url('../images/questions-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include xl {
+      .overlay{
+        display: block;
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+      }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    max-width: 800px;
+  }
+
+  &__accordion {
+    gap: 10px;
+  }
+
+  &__item.active {
+    .accordion-header {
+      color: var(--light-color);
+      background-color: var(--accent);
+      
+      span{
+        color: var(--light-color);
+      }
+    }
+
+    .open-item-plus div{
+      background-color: var(--light-color);
+    }
+
+    .accordion-body {
+      padding: 20px 30px 10px;
+    }
+  }
+
+  &__item-header {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    min-height: 80px;
+    padding: 27px 30px;
+
+    @include md {
+        padding: 20px;
+        min-height: 65px;
+    }
+  }
+
+  &__item-left {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+  }
+
+  &__item-num {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray);
+  }
+
+  &__item-title {
+    font-weight: 500;
+  }
+
+  &__item-body {
+    padding: 0 20px;
+  }
+
+  &__item-content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__btn {
+    max-width: 360px;
+    margin: 40px auto 0;
+
+    @include xl {
+        margin-top: 30px;
+    }
+
+    @include lg {
+        margin-top: 20px;
+    }
+  }
+}

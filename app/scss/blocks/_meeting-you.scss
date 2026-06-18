@@ -1,0 +1,51 @@
+.meeting-you {
+  padding-top: var(--indent);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(500/350*100%);
+    min-height: 350px;
+  
+    @include lg {
+      width: 300px;
+  
+      .overlay {
+        display: block;
+      }
+    }
+  }
+  
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+  
+    @include xxl {
+      padding: 20px;
+    }
+  
+    @include lg {
+      padding: 25px;
+    }
+  }
+}

@@ -2,10 +2,20 @@
   position: absolute;
   top: 20px;
   width: 100%;
+  left: 0;
+
+  @include lg {
+      top: 15px;
+  }
 
   &__list {
     display: inline-flex;
+    flex-wrap: wrap;
     gap: 5px;
+
+    @include md {
+        gap: 0 2px;
+    }
   }
 
   &__item,
@@ -15,6 +25,10 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--gray);
+
+    @include md {
+        font-size: 12px;
+    }
   }
 
   &__link {

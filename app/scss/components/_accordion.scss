@@ -40,12 +40,42 @@
   }
 }
 
-.accordion-item.active .open-item {
-  // transform: rotate(90deg);
-}
-
 .accordion-item.active .accordion-body {
   opacity: 1;
+  padding: 0;
   grid-template-rows: 1fr;
   transform: scaleY(1);
+}
+
+.accordion-item.active .open-item-plus{
+  div:first-child{
+    width: 3px;
+  }
+}
+
+.open-item-plus {
+  position: relative;
+  min-height: 17px;
+  min-width: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    position: absolute;
+    width: 17px;
+    height: 3px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:first-child {
+      transform: rotate(90deg) translateY(-1px);
+    }
+
+    &:last-child {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }

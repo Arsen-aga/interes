@@ -1,0 +1,123 @@
+.key-decisions {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    @include xxl {
+      gap: 15px;
+    }
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(450/711*100%);
+    min-height: 450px;
+    grid-column: span 2;
+
+    &:last-child:nth-child(odd) {
+      grid-column: span 4;
+      padding-bottom: calc(450/1440*100%);
+    }
+
+
+    @include xxl {
+      min-height: 420px;
+    }
+
+    @include xl {
+      min-height: 380px;
+    }
+
+    @include lg {
+      min-height: 420px;
+      width: 300px;
+
+      .overlay {
+        display: block;
+      }
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+
+    @include xxl {
+      padding: 30px;
+    }
+
+    @include lg {
+      padding: 25px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 122%;
+
+    @include xxl {
+        font-size: 32px;
+    }
+
+    @include xl {
+        font-size: 28px;
+    }
+
+    @include lg {
+        font-size: 24px;
+    }
+  }
+
+  &__item-list,
+  &__item-text {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    @include xl {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    @include lg {
+        margin-top: 5px;
+    }
+
+    @include sm {
+        font-size: 16px;
+    }
+  }
+
+  &__item-list{
+    display: grid;
+    gap: 7px;
+
+    @include lg {
+        gap: 0;
+    }
+  }
+}

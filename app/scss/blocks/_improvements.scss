@@ -1,0 +1,176 @@
+.improvements {
+  padding-top: var(--indent);
+
+  &__elems {
+    display: grid;
+    gap: 40px;
+
+    @include lg {
+        gap: 30px;
+    }
+  }
+
+  &__elem {
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+    gap: 40px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    @include xxl {
+      gap: 20px;
+    }
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      margin-top: 30px;
+        display: block;
+    }
+
+    @include md {
+        margin-top: 20px;
+    }
+
+    @include sm {
+        margin-top: 15px;
+    }
+  }
+
+  &__elem-title {
+    max-width: 240px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 122%;
+
+    @include xl {
+      font-size: 32px;
+      max-width: 200px;
+    }
+
+    @include lg {
+      font-size: 30px;
+        text-align: center;
+        max-width: none;
+        margin-bottom: 10px;
+        br{display: none;}
+    }
+
+    @include md {
+        font-size: 28px;
+    }
+
+    @include sm {
+        font-size: 24px;
+    }
+  }
+
+  &__elem-right {
+    max-width: 1160px;
+    width: 100%;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include xxl {
+      gap: 15px;
+    }
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(440/370*100%);
+    min-height: 370px;
+
+    @include xxl {
+      min-height: 420px;
+      padding-bottom: 145%;
+    }
+
+    @include xl {
+      min-height: 380px;
+
+      .overlay {
+        display: block;
+      }
+    }
+
+    @include lg {
+      width: 300px;
+      min-height: 320px;
+      padding: 0;
+    }
+  }
+
+
+  &__item-long {
+    padding-bottom: calc(600/370*100%);
+
+    @include lg {
+        padding-bottom: 145%;
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 35px;
+
+    @include xxl {
+      padding: 30px;
+    }
+
+    @include xl {
+      padding: 25px;
+    }
+
+    @include lg {
+      padding: 20px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @include xl {
+      font-size: 24px;
+    }
+  }
+
+  &__item-list {
+    margin-top: 15px;
+    display: grid;
+    gap: 7px;
+  }
+
+
+}

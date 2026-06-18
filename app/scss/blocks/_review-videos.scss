@@ -1,0 +1,77 @@
+.review-videos {
+  margin-top: var(--indent);
+  padding: var(--indent);
+  background-color: #F9F9F9;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    @include xxl {
+        gap: 15px;
+    }
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(700/468*100%);
+    min-height: 350px;
+
+    @include lg {
+      width: 300px;
+      padding-bottom: 136%;
+
+      .overlay {
+        display: block;
+      }
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/dots.svg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 28px;
+      left: 30px;
+      top: 30px;
+    }
+
+    @include xxl {
+      padding: 35px;
+    }
+
+    @include xl {
+        padding: 20px;
+    }
+
+  }
+
+}
