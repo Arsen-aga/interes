@@ -19,7 +19,7 @@
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/front-block';
-@import 'blocks/specialization';
+@import 'blocks/specialization'; // examination
 @import 'blocks/get-started';
 @import 'blocks/implement-projects';
 @import 'blocks/any-components';
@@ -34,8 +34,6 @@
 @import 'blocks/free-create';
 @import 'blocks/produce-furniture';
 @import 'blocks/choose-direction';
-
-
 @import 'blocks/front-block-thankyou';
 @import 'blocks/favorites';
 @import 'blocks/front-block-catalog';
@@ -49,10 +47,17 @@
 @import 'blocks/salon-before';
 @import 'blocks/meeting-save';
 @import 'blocks/meeting-you';
-@import 'blocks/realistic-3d-project';
+@import 'blocks/realistic-3d-project'; // responsibility
 @import 'blocks/first-meeting';
-@import 'blocks/review-videos';
+@import 'blocks/review-videos'; //branches
 @import 'blocks/questions';
+@import 'blocks/record';
+@import 'blocks/front-block-reviews';
+@import 'blocks/front-block-about';
+@import 'blocks/main-specialization';
+@import 'blocks/history';
+@import 'blocks/coordination';
+@import 'blocks/stay-in-touch';
 
 
 

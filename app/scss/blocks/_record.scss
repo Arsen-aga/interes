@@ -1,0 +1,71 @@
+.record{
+  padding-top: var(--indent);
+
+  &__form{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--default-color);
+    padding: 80px 40px;
+
+    @include xxl {
+        padding: 80px 0;
+    }
+
+    @include lg {
+        padding: 50px 0;
+    }
+
+    @include md {
+        padding: 40px 0;
+    }
+
+    @include sm {
+        padding: 30px 0;
+    }
+  }
+
+  &__title, &__subtitle{
+    text-align: left;
+    color: var(--light-color);
+  }
+
+  &__title{
+    margin-bottom: 0;
+  }
+
+  &__form-inner{
+    max-width: 740px;
+  }
+
+  &__bottom{
+    margin-top: 15px;
+  }
+
+  &__inputs{
+    display: flex;
+    gap: 10px;
+
+    @include md {
+        flex-direction: column;
+    }
+  }
+
+  &__inp,
+    &__btn{
+    max-width: 370px;
+
+    @include md {
+        max-width: none;
+    }
+  }
+
+
+  .checkbox-block{
+    max-width: 366px;
+    margin: 15px  0  0 auto;
+
+    @include md {
+        margin: 15px auto 0;
+    }
+  }
+}

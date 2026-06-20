@@ -1,0 +1,52 @@
+@@include('../blocks/header.html')
+<main class="main" id="reviews-page">
+  @@include('../blocks/front-block-reviews.html')
+  <section class="review-videos">
+    <div class="container">
+      <h2 class="review-videos__title _title">
+        Впечатления владельцев после установки
+      </h2>
+      @@include('../components/cursor.html')
+      <div class="review-videos__items">
+        <a class="review-videos__item" href="images/review-videos-1.webp" data-fancybox>
+          <img class="review-videos__item-img _img" src="images/review-videos-1.webp" alt="review-videos-1">
+          <div class="overlay"></div>
+          @@include('../components/play.html')
+          <div class="review-videos__item-inner _white-text">
+            <p class="review-videos__item-text">
+              Здесь можно вживую посмотреть материалы, фасады и механизмы. Намного легче понять, что подходит именно
+              вам.
+            </p>
+          </div>
+        </a>
+        <a class="review-videos__item" href="images/review-videos-2.webp" data-fancybox>
+          <img class="review-videos__item-img _img" src="images/review-videos-2.webp" alt="review-videos-2">
+          <div class="overlay"></div>
+          @@include('../components/play.html')
+          <div class="review-videos__item-inner _white-text">
+            <p class="review-videos__item-text">
+              Менеджер помог собрать оптимальный вариант по размерам, бюджету
+              и пожеланиям. Сразу стало понятно,
+              что заказывать.
+            </p>
+          </div>
+        </a>
+        <a class="review-videos__item" href="images/review-videos-3.webp" data-fancybox>
+          <img class="review-videos__item-img _img" src="images/review-videos-3.webp" alt="review-videos-3">
+          <div class="overlay"></div>
+          @@include('../components/play.html')
+          <div class="review-videos__item-inner _white-text">
+            <p class="review-videos__item-text">
+              Понравилось, что в салоне видно разницу материалов, фурнитуры и решений в разных ценовых категориях.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  @@include('../blocks/reviews.html')
+  @@include('../blocks/project-videos.html')
+  @@include('../blocks/branded-salons.html')
+  @@include('../blocks/map-block.html')
+</main>
+@@include('../blocks/footer.html')

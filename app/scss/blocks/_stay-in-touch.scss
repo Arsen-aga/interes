@@ -1,0 +1,107 @@
+.stay-in-touch {
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+  background-image: url('../images/stay-in-touch-bg.webp');
+
+  .overlay{
+    @include lg {
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  &__subtitle {
+    text-align: left;
+  }
+
+  &__items {
+    display: grid;
+    gap: 40px;
+
+    @include xl {
+        gap: 30px;
+    }
+
+    @include lg {
+        gap: 20px;
+    }
+
+    @include md {
+        gap: 15px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 15px;
+
+    @include sm {
+        gap: 10px;
+    }
+  }
+
+  &__item-icon {
+    margin-top: 3px;
+    width: 34px;
+    height: 34px;
+    aspect-ratio: 1;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+
+    @include xl {
+        font-size: 28px;
+    }
+
+    @include lg {
+        font-size: 24px;
+    }
+
+    @include md {
+        font-size: 22px;
+    }
+
+    @include sm {
+        font-size: 20px;
+    }
+  }
+
+  &__item-hr{
+    margin: 25px 0;
+    max-width: 473px;
+    height: 1px;
+    background-color: var(--gray);
+
+    @include xl {
+        margin: 20px 0;
+    }
+
+    @include lg {
+        margin: 15px 0;
+    }
+
+    @include md {
+        margin: 10px 0;
+    }
+  }
+
+  &__item-list{
+    display: grid;
+    gap: 7px;
+
+    @include md {
+        gap: 5px;
+    }
+    @include sm {
+        gap: 0;
+    }
+  }
+}

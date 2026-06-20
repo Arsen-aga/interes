@@ -300,7 +300,7 @@ a {
   gap: 10px;
   padding: 12px;
   width: 100%;
-  height: 90px;
+  height: 94px;
   background-color: var(--primary);
   background: linear-gradient(180deg, #FF834B 0%, #EF4E06 100%);
   box-shadow: inset 0px -6px 10px rgba(255, 255, 255, 0.15);
@@ -609,6 +609,10 @@ a {
     line-height: calc(20 / 12 * 100%);
     color: var(--gray);
 
+    @include sm {
+        br{display: none;}
+    }
+
     a {
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -654,90 +658,10 @@ a {
   margin-top: var(--indent);
 }
 
-
-
-
-
-._telegram-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  width: 100%;
-  height: 100px;
-  background-color: var(--telegram-color);
-  font-family: var(--font-default);
-  text-align: center;
-  color: var(--light-color);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 20px 40px rgba(53, 169, 229, 0.2),
-    inset 0px 10px 25px rgba(255, 255, 255, 0.2);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 144%;
-  text-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4);
-
-  @include xl {
-    height: 90px;
-  }
-
-  @include lg {
-    height: 80px;
-    max-width: 340px;
-  }
-
-  @include md {
-    height: 70px;
-    font-size: 14px;
-  }
-
-  @include sm {
-    height: 65px;
-    max-width: 300px;
-  }
-
-  &:hover {
-    background-color: var(--telegram-hover);
-    box-shadow: 0px 20px 40px rgba(53, 169, 229, 0.2),
-      inset 0px 10px 25px rgba(255, 255, 255, 0.2);
-  }
-
-  &:active {
-    background-color: var(--telegram-color);
-    box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
-  }
-}
-
-.magnifier {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: var(--primary);
-  box-shadow: 0px 20px 40px rgba(250, 185, 0, 0.2),
-    inset 0px 10px 25px rgba(255, 255, 255, 0.2);
-
-  @include md {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-  }
-
-  &:hover {
-    background-color: var(--primary-hover);
-  }
-}
-
 .form {
   &__items {
     display: grid;
-    gap: 10px;
+    gap: 15px;
   }
 
   &__text {
@@ -745,13 +669,15 @@ a {
     font-size: 14px;
     line-height: calc(22 / 14 * 100%);
     text-transform: uppercase;
-    color: #939393;
-    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    color: var(--light-color);
+    margin-bottom: 10px;
   }
 
   &__labels {
     display: flex;
-    gap: 6px;
+    gap: 5px;
+    max-width: 400px;
 
     @include sm {
       flex-wrap: wrap;
@@ -769,10 +695,9 @@ a {
 
     .tel,
     .telegram,
-    .max,
-    .whatsapp {
+    .max {
       svg path {
-        fill: #999999;
+        fill: var(--gray);
       }
     }
 
@@ -785,22 +710,22 @@ a {
 
     input:checked+.sms {
       background-color: var(--primary);
-      color: var(--default-color);
+      color: var(--light-color);
       border-color: transparent;
 
       svg path {
-        stroke: var(--default-color);
+        stroke: var(--light-color);
         fill-opacity: 1;
       }
     }
 
     input:checked+.tel {
       background-color: var(--primary);
-      color: var(--default-color);
+      color: var(--light-color);
       border-color: transparent;
 
       svg path {
-        fill: var(--default-color);
+        fill: var(--light-color);
         fill-opacity: 1;
       }
     }
@@ -832,8 +757,8 @@ a {
   }
 
   &__label-inner {
-    height: 42px;
-    border: 1px solid #939393;
+    height: 40px;
+    border: 1px solid var(--gray);
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -844,9 +769,10 @@ a {
     transition: all 0.3s ease-in;
     font-weight: 400;
     font-size: 14px;
+    border-radius: 6px;
     line-height: calc(22 / 14 * 100%);
     text-align: center;
-    color: #939393;
+    color: var(--gray);
 
     svg {
       height: 20px;
@@ -947,10 +873,11 @@ a {
 }
 
 ._input {
-  height: 100px;
+  height: 94px;
   width: 100%;
   background-color: #fafbfc;
   border: 1px solid #f1f1f1;
+  border-radius: 12px;
   transition: all 0.3s;
   font-weight: 400;
   font-size: 18px;
@@ -960,10 +887,6 @@ a {
 
   &:focus {
     background-color: var(--light-color);
-  }
-
-  @include xl {
-    height: 90px;
   }
 
   @include lg {
@@ -980,10 +903,99 @@ a {
   }
 
   &::placeholder {
-    color: rgba($color: #1a1c1e, $alpha: 0.5);
+    color: rgba($color: #252A36, $alpha: 0.5);
 
     @include md {
       font-size: 14px;
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+._telegram-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--telegram-color);
+  font-family: var(--font-default);
+  text-align: center;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 20px 40px rgba(53, 169, 229, 0.2),
+    inset 0px 10px 25px rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 144%;
+  text-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4);
+
+  @include xl {
+    height: 90px;
+  }
+
+  @include lg {
+    height: 80px;
+    max-width: 340px;
+  }
+
+  @include md {
+    height: 70px;
+    font-size: 14px;
+  }
+
+  @include sm {
+    height: 65px;
+    max-width: 300px;
+  }
+
+  &:hover {
+    background-color: var(--telegram-hover);
+    box-shadow: 0px 20px 40px rgba(53, 169, 229, 0.2),
+      inset 0px 10px 25px rgba(255, 255, 255, 0.2);
+  }
+
+  &:active {
+    background-color: var(--telegram-color);
+    box-shadow: 0px 0px 0px transparent, inset 0px 0px 0px transparent;
+  }
+}
+
+.magnifier {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary);
+  box-shadow: 0px 20px 40px rgba(250, 185, 0, 0.2),
+    inset 0px 10px 25px rgba(255, 255, 255, 0.2);
+
+  @include md {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  &:hover {
+    background-color: var(--primary-hover);
   }
 }

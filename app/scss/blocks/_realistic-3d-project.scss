@@ -1,25 +1,21 @@
+.responsibility,
 .realistic-3d-project {
-  margin-top: var(--indent);
-  padding: var(--indent) 0;
-  background-color: var(--default-color);
+  padding-top: var(--indent);
 
-  &__title {
-    margin-bottom: 0;
-  }
 
   .swiper-slide {
     transition: all 0.5s ease-in-out;
   }
 
-  &__slide{
+  &__slide {
     max-width: 840px;
 
     @include lg {
-        max-width: 450px;
+      max-width: 450px;
     }
 
     @include sm {
-        max-width: 320px;
+      max-width: 320px;
     }
   }
 
@@ -31,7 +27,17 @@
     overflow: hidden;
 
     @include sm {
-        padding-bottom: 69%;
+      padding-bottom: 69%;
     }
+  }
+}
+
+.realistic-3d-project {
+  background-color: var(--default-color);
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
   }
 }

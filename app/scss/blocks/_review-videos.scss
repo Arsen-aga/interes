@@ -1,7 +1,6 @@
+.branches,
 .review-videos {
-  margin-top: var(--indent);
-  padding: var(--indent);
-  background-color: #F9F9F9;
+  padding-top: var(--indent);
 
   &__title {
     margin-bottom: 0;
@@ -13,7 +12,7 @@
     gap: 18px;
 
     @include xxl {
-        gap: 15px;
+      gap: 15px;
     }
 
     @include xl {
@@ -51,7 +50,49 @@
     width: 100%;
     padding: 40px;
 
-    &::before{
+    @include xxl {
+      padding: 35px;
+    }
+
+    @include xl {
+      padding: 20px;
+    }
+
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+
+    @include xxl {
+      font-size: 26px;
+    }
+
+    @include xl {
+      font-size: 22px;
+    }
+  }
+
+  &__item-text {
+    margin-top: 15px;
+
+    @include xl {
+      br {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.review-videos {
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+  background-color: #F9F9F9;
+
+  &__item-inner {
+    &::before {
       position: absolute;
       content: '';
       background-image: url('../images/icons/dots.svg');
@@ -63,15 +104,34 @@
       left: 30px;
       top: 30px;
     }
-
-    @include xxl {
-      padding: 35px;
-    }
-
-    @include xl {
-        padding: 20px;
-    }
-
   }
+}
 
+
+#reviews-page {
+  .review-videos {
+    margin-top: 0;
+    background-color: var(--light-color);
+    padding-bottom: 0;
+
+    &__title {
+      margin-bottom: 40px;
+
+      @include xl {
+        margin-bottom: 35px;
+      }
+
+      @include lg {
+        margin-bottom: 30px;
+      }
+
+      @include md {
+        margin-bottom: 25px;
+      }
+
+      @include sm {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

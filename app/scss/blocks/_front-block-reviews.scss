@@ -1,0 +1,73 @@
+.front-block-reviews {
+  padding: var(--indent-front) 0;
+  background-image: url('../images/front-block-reviews-bg.webp');
+
+  .overlay {
+    @include xl {
+      display: block;
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 127%;
+
+    @include xl {
+      font-size: 28px;
+    }
+
+    @include lg {
+      margin-top: 15px;
+      font-size: 26px;
+    }
+
+    @include md {
+      margin-top: 10px;
+      font-size: 22px;
+    }
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__btns {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    max-width: 550px;
+
+    @include xl {
+      margin-top: 30px;
+    }
+
+    @include lg {
+      margin-top: 20px;
+    }
+
+    @include md {
+      margin-top: 15px;
+    }
+
+    @include xs {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    max-width: 270px;
+
+    @include xs {
+      max-width: 300px;
+    }
+  }
+
+}

@@ -32,6 +32,10 @@
   text-align: center;
   margin-bottom: 40px;
 
+  @include xxl {
+      font-size: 56px;
+  }
+
   @include xl {
     font-size: 42px;
     margin-bottom: 35px;

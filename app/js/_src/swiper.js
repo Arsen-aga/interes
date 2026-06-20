@@ -322,22 +322,23 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.salon-before__swiper .swiper-pagination',
     },
   })
-  new Swiper(".realistic-3d-project__swiper", {
-    loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    initialSlide: 1,
-    centeredSlides: true,
-    speed: 1000,
-    mousewheel: {
-      enabled: true,
-      eventsTarget: ".realistic-3d-project__swiper", // или 'container'
-      forceToAxis: true, // только горизонтальная прокрутка
-    },
-    touchEventsTarget: "container",
-    autoplay: {
-      delay: 2000,
-    },
-  });
+
+  const onceSwiper = document.querySelectorAll('.realistic-3d-project__swiper, .responsibility__swiper')
+
+  onceSwiper.forEach(swiper => {
+    new Swiper(swiper, {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      initialSlide: 1,
+      centeredSlides: true,
+      speed: 1000,
+      touchEventsTarget: "container",
+      autoplay: {
+        delay: 2000,
+      },
+    });
+  })
+
 
 })

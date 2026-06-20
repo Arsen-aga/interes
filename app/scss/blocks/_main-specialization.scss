@@ -1,0 +1,94 @@
+.main-specialization {
+  padding-top: var(--indent);
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    @include xxl {
+      max-width: 500px;
+    }
+
+    @include lg {
+      max-width: none;
+    }
+
+    @include md {
+        br{display: none;}
+    }
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+
+    @include md {
+        margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 122%;
+
+    @include xxl {
+      font-size: 30px;
+    }
+
+    @include lg {
+        font-size: 26px;
+    }
+
+    @include md {
+        font-size: 24px;
+    }
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+
+    @include xxl {
+      br {
+        display: none;
+      }
+    }
+
+    @include lg {
+        margin-top: 10px;
+    }
+  }
+
+  &__right {
+    max-width: 825px;
+    width: 100%;
+
+    @include xxl {
+      max-width: 600px;
+    }
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(510/825*100%);
+
+    @include xl {
+      padding-bottom: 106%;
+    }
+
+  }
+}

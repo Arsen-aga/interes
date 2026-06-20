@@ -1,7 +1,88 @@
-.meeting-save{
+.meeting-save {
   padding-top: var(--indent);
 
-  &__title{
+  &__title {
     margin-bottom: 0;
+  }
+
+  &__items {
+    display: flex;
+    align-items: start;
+    gap: 80px;
+    margin-bottom: 50px;
+
+    @include xxl {
+      gap: 30px;
+    }
+
+    @include xl {
+      margin-bottom: 40px;
+    }
+
+    @include lg {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+
+    @include sm {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include xxl {
+      gap: 15px;
+      max-width: 370px;
+    }
+
+    @include xl {
+      gap: 10px;
+    }
+
+    @include lg {
+      max-width: 470px;
+      gap: 5px;
+      width: 100%;
+    }
+
+    hr {
+      background-color: var(--gray);
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--primary);
+
+    @include xxl {
+      font-size: 24px;
+    }
+
+    @include xl {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    @include xl {
+        font-size: 18px;
+    }
   }
 }

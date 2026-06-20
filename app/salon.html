@@ -1185,7 +1185,76 @@
     </div>
   </div>
 </section>
-  -
+  <section class="record">
+  <form method="POST" action="#" enctype="multipart/form-data" class="record__form form-submit">
+    <div class="container">
+      <input type="hidden" name="from" class="from" value="Запишитесь на индивидуальный показ позиций в МЦ «ЭМА»">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <div class="record__form-inner">
+        <h2 class="record__title _title">
+          Запишитесь на<br>
+          индивидуальный показ<br>
+          позиций в МЦ «ЭМА»
+        </h2>
+        <p class="record__subtitle _subtitle">
+          Заполните форму ниже и мы расскажем<br>
+          о дальнейших шагах
+        </p>
+        <p class="form__text record__form-text">
+          Выберите способ связи:
+        </p>
+        <div class="form__labels">
+          <label class="form__label">
+            <input type="radio" name="call" value="Звонок">
+            <span class="form__label-inner tel">
+              <span class="form__label-text">
+                Звонок
+              </span>
+            </span>
+          </label>
+          <label class="form__label">
+            <input type="radio" name="call" value="Max" checked>
+            <span class="form__label-inner max">
+              <span class="form__label-text">
+                Max
+              </span>
+            </span>
+          </label>
+          <label class="form__label">
+            <input type="radio" name="call" value="Telegram">
+            <span class="form__label-inner telegram">
+              <span class="form__label-text">
+                Telegram
+              </span>
+            </span>
+          </label>
+        </div>
+        <div class="record__bottom">
+          <div class="record__inputs">
+            <input class="_input record__inp" type="tel" name="phone" placeholder="Введите Ваш телефон">
+            <button type="submit" class="record__btn _main-btn">
+              Записаться на индивидуальный<br>
+              показ позиций в МЦ «ЭМА»
+            </button>
+          </div>
+          <label class="checkbox-block">
+            <input type="checkbox" name="access" required checked>
+            <span class="checkbox-block__check">
+              <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.74203 1.64049L4 5.7183C3.65516 6.0939 3.0969 6.0939 2.75295 5.7183L0.257965 2.99784C-0.0859883 2.6232 -0.0859883 2.02089 0.257965 1.64049C0.6028 1.26201 1.16106 1.26201 1.5059 1.64049L3.37647 3.67988L6.4941 0.283141C6.83894 -0.0943804 7.3972 -0.0943804 7.74203 0.283141C8.08599 0.663545 8.08599 1.26201 7.74203 1.64049Z" fill="#EF4E06"/>
+</svg>
+
+            </span>
+            <span class="checkbox-block__text">
+              Я подтверждаю ознакомление и даю <a class="_link" href="/agrreement.php" target="_blank">Согласие на
+                обработку<br> персональных данных</a>, в порядке и на условиях, указанных<br> в <a class="_link" href="/policy.php" target="_blank">Политике конфиденциальности</a>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
   <section class="questions _image-wrapper relative">
   <div class="overlay"></div>
   <div class="container relative">
