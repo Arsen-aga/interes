@@ -1,0 +1,29 @@
+.big-auto-swiper {
+  .swiper-slide {
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__slide {
+    max-width: 840px;
+
+    @include lg {
+      max-width: 450px;
+    }
+
+    @include sm {
+      max-width: 320px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: calc(560 / 840 * 100%);
+    overflow: hidden;
+
+    @include sm {
+      padding-bottom: 69%;
+    }
+  }
+}

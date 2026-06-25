@@ -1,7 +1,7 @@
 .front-block-cases,
 .front-block-single {
   padding: var(--indent-front) 0;
-  background-color: var(--default-color);
+  background-color: var(--bg-dark);
 
   @include lg {
     padding-top: 80px;
@@ -235,5 +235,11 @@
     @include lg {
       padding-bottom: 20px;
     }
+  }
+}
+
+.front-block-cases{
+  .swiper-pagination{
+    bottom: 20px;
   }
 }
