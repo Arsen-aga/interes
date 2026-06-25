@@ -332,6 +332,19 @@
   ],
   "description": "HTML breadcrumbs"
   },
+  "HTML include big-auto-swiper": {
+  "prefix": "big-auto-swiper",
+  "body": [
+  "@@include('../components/big-auto-swiper.html', {",
+  "\"images\": [",
+  "\"${1:example}-1\",",
+  "\"${1:example}-2\",",
+  "\"${1:example}-3\",",
+  "],",
+  "})",
+  ],
+  "description": "HTML big-auto-swiper"
+  },
   "HTML accordion": {
   "prefix": "accordion",
   "body": [

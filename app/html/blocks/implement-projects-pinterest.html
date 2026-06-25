@@ -1,0 +1,68 @@
+<section class="implement-projects-pinterest">
+  <div class="container">
+    <h2 class="implement-projects-pinterest__title _title">
+      Реализуем проекты по вашим<br>
+      фотографиям из Pinterest
+    </h2>
+    <p class="implement-projects-pinterest__subtitle _subtitle">
+      Если вы нашли в интернете дизайн мебели, который вам нравится,<br>
+      мы адаптируем его под ваши размеры и бюджет
+    </p>
+    <div class="implement-projects-pinterest__items">
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          @@include('../../images/icons/implement-projects-pinterest-1.svg')
+        </div>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            Мы <span>подбираем в салоне<br>
+              максимально похожие декоры</span> пленки,<br>
+            ЛДСП и фрезеровки фасадов
+          </p>
+        </div>
+      </div>
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          @@include('../../images/icons/implement-projects-pinterest-2.svg')
+        </div>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            <span>Проектируем аналогичную<br>
+              конструкцию</span> с учетом ваших розеток,<br>
+            выступов и перепадов высот
+          </p>
+        </div>
+      </div>
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          @@include('../../images/icons/implement-projects-pinterest-3.svg')
+        </div>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            <span>Заменяем дорогие европейские<br>
+              комплектующие на надежные аналоги,</span><br>
+            если необходимо оптимизировать бюджет<br>
+            без потери качества сборки
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('../components/big-auto-swiper.html', {
+  "images": [
+  "implement-projects-pinterest-1",
+  "implement-projects-pinterest-2",
+  "implement-projects-pinterest-3",
+  ],
+  })
+  <div class="container">
+    <div class="implement-projects-pinterest__btns">
+      <a class="implement-projects-pinterest__btn _main-btn" href="#callback" data-fancybox>
+        Рассчитать проект
+      </a>
+      <a class="implement-projects-pinterest__btn _red-btn" href="#callback" data-fancybox>
+        Записаться на встречу
+      </a>
+    </div>
+  </div>
+</section>

@@ -295,19 +295,36 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
   });
-  new Swiper(".front-block-single__swiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    touchEventsTarget: "container",
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: '.front-block-single__right .swiper-pagination',
-    },
-  })
+
+  const frontSwipers = document.querySelectorAll('.front-swiper')
+  if (frontSwipers && frontSwipers.length) {
+    const swiperParams = {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      touchEventsTarget: "container",
+    }
+
+    frontSwipers.forEach(swiper => {
+      const next = swiper.querySelector(".swiper-button-next")
+      const prev = swiper.querySelector(".swiper-button-prev")
+      if (document.querySelector('.front-swiper-wrapper .swiper-pagination')) {
+        swiperParams.pagination = {
+          el: '.front-swiper-wrapper .swiper-pagination',
+        }
+      }
+      if (next && prev) {
+        swiperParams.navigation = {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+      }
+      new Swiper(swiper, swiperParams)
+    })
+  }
+
+
+
   new WheelInSwiper(".salon-before__swiper", {
     loop: true,
     slidesPerView: 1,
@@ -323,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
-  const onceSwiper = document.querySelectorAll('.realistic-3d-project__swiper, .responsibility__swiper')
+  const onceSwiper = document.querySelectorAll('.realistic-3d-project__swiper, .responsibility__swiper, .big-auto-swiper')
 
   onceSwiper.forEach(swiper => {
     new Swiper(swiper, {
@@ -338,6 +355,21 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 2000,
       },
     });
+  })
+
+  const completedWorks = document.querySelectorAll('.completed-works__swiper')
+  completedWorks.forEach(swiper => {
+    new WheelInSwiper(swiper, {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed: 1000,
+      touchEventsTarget: "container",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    })
   })
 
 
