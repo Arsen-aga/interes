@@ -1,3 +1,4 @@
+.front-block-cases,
 .front-block-single {
   padding: var(--indent-front) 0;
   background-color: var(--default-color);
@@ -8,7 +9,7 @@
 
   &__inner {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 50px;
 
     @include xxl {
@@ -34,6 +35,63 @@
         display: none;
       }
     }
+  }
+
+  &__btns {
+    margin-top: 30px;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include xl {
+      margin-top: 20px;
+    }
+
+    @include lg {
+      margin-top: 15px;
+      max-width: none;
+    }
+
+    @include sm {
+      margin-top: 10px;
+    }
+  }
+
+  &__right {
+    max-width: 670px;
+    width: 100%;
+
+    @include xxl {
+      max-width: 520px;
+    }
+
+    @include xl {
+      max-width: 480px;
+    }
+
+    @include lg {
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+
+    @include xs {
+      padding-bottom: 69%;
+    }
+  }
+
+
+}
+
+
+.front-block-single {
+  &__inner {
+    align-items: start;
   }
 
   &__price {
@@ -79,7 +137,7 @@
     }
 
     @include sm {
-        margin-top: 10px;
+      margin-top: 10px;
     }
   }
 
@@ -120,7 +178,7 @@
     }
 
     @include sm {
-        margin-top: 10px;
+      margin-top: 10px;
     }
   }
 
@@ -132,7 +190,7 @@
     color: var(--gray);
 
     @include sm {
-        font-size: 14px;
+      font-size: 14px;
     }
   }
 
@@ -144,28 +202,7 @@
     }
 
     @include sm {
-        font-size: 14px;
-    }
-  }
-
-  &__btns {
-    margin-top: 30px;
-    max-width: 550px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @include xl {
-      margin-top: 20px;
-    }
-
-    @include lg {
-      margin-top: 15px;
-      max-width: none;
-    }
-
-    @include sm {
-        margin-top: 10px;
+      font-size: 14px;
     }
   }
 
@@ -183,40 +220,20 @@
     }
 
     @include sm {
-        margin-top: 10px;
-        font-size: 14px;
-        br{display: none;}
+      margin-top: 10px;
+      font-size: 14px;
+
+      br {
+        display: none;
+      }
     }
   }
 
   &__right {
-    max-width: 670px;
-    width: 100%;
     padding-bottom: 27px;
-
-    @include xxl {
-      max-width: 520px;
-    }
-
-    @include xl {
-      max-width: 480px;
-    }
 
     @include lg {
       padding-bottom: 20px;
-      margin: 0 auto;
     }
   }
-
-  &__link {
-    display: block;
-    position: relative;
-    padding-bottom: 100%;
-
-    @include xs {
-        padding-bottom: 69%;
-    }
-  }
-
-
 }
