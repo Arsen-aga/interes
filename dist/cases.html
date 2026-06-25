@@ -316,7 +316,7 @@
   +7 343 312 14 62
 </a>
     </div>
-<main class="main" id="about-page">
+<main class="main">
   <section class="front-block-cases _white-text relative">
   <div class="breadcrumbs">
   <div class="container">
@@ -354,8 +354,8 @@
           <a class="front-block-cases__btn _red-btn" href="#" data-fancybox>Записаться на встречу</a>
         </div>
       </div>
-      <div class="front-block-cases__right relative">
-        <div class="front-block-cases__swiper swiper">
+      <div class="front-block-cases__right relative front-swiper-wrapper">
+        <div class="front-block-cases__swiper swiper front-swiper">
           <div class="swiper-wrapper">
             <div class="front-block-cases__slide swiper-slide">
               <a class="front-block-cases__link" href="images/front-block-cases-1.webp"
@@ -420,351 +420,367 @@
     </div>
   </div>
 </section>
-  <section class="meeting-save">
-    <div class="container">
-      <h2 class="meeting-save__title _title">
-        С 2020 года мы запустили собственную<br> производственную базу
-      </h2>
-      <p class="meeting-save__subtitle _subtitle">
-        Это позволило нам внедрить внутренние стандарты качества<br>
-        и напрямую отвечать за то, что мы привозим к вам домой
-      </p>
-      <div class="meeting-save__items">
-        <div class="meeting-save__item">
-          <h4 class="meeting-save__item-title">
-            > 500 м²
-          </h4>
-          <hr>
-          <p class="meeting-save__item-text">
-            — площадь производственных и складских цехов
-          </p>
+  <section class="completed-works">
+  <div class="container">
+    <h2 class="completed-works__title _title">
+      Каталог выполненных работ
+    </h2>
+    <div class="completed-works__filters filters">
+      <div class="cursor @@class">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+    <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <path class="tooltip-horizontal-scroll-icon_hand"
+      d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+      fill="rgba(190,190,190,1)"></path>
+    <style>
+      .tooltip-horizontal-scroll-icon_hand {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+      }
+
+      .tooltip-horizontal-scroll-icon_card {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+        0% {
+          transform: translateX(80px) scale(1);
+          opacity: 0
+        }
+
+        10% {
+          transform: translateX(80px) scale(1);
+          opacity: 1
+        }
+
+        20%,
+        60% {
+          transform: translateX(175px) scale(.6);
+          opacity: 1
+        }
+
+        80% {
+          transform: translateX(5px) scale(.6);
+          opacity: 1
+        }
+
+        to {
+          transform: translateX(5px) scale(.6);
+          opacity: 0
+        }
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+        0%,
+        60% {
+          transform: translateX(0)
+        }
+
+        80%,
+        to {
+          transform: translateX(-240px)
+        }
+      }
+    </style>
+  </svg>
+</div>
+      <div class="completed-works__btns">
+        <div class="completed-works__btn filters-btn active" data-filter="one">
+          Встроенные шкафы и гардеробные
         </div>
-        <div class="meeting-save__item">
-          <h4 class="meeting-save__item-title">
-            > 15 профильных специалистов
-          </h4>
-          <hr>
-          <p class="meeting-save__item-text">
-            — технологи, операторы станков, сборщики
-          </p>
+        <div class="completed-works__btn filters-btn" data-filter="two">
+          Кухни
         </div>
-        <div class="meeting-save__item">
-          <h4 class="meeting-save__item-title">
-            30–40 изделий
-          </h4>
-          <hr>
-          <p class="meeting-save__item-text">
-            — еженедельный объем выпуска
-          </p>
+        <div class="completed-works__btn filters-btn" data-filter="three">
+          Прихожие и гостиные
+        </div>
+        <div class="completed-works__btn filters-btn" data-filter="four">
+          Мебель для ванных комнат
+        </div>
+        <div class="completed-works__btn filters-btn" data-filter="five">
+          Спальни и детские
+        </div>
+        <div class="completed-works__btn filters-btn" data-filter="six">
+          Комплексная меблировка
+        </div>
+      </div>
+      <div class="completed-works__items">
+        <div class="completed-works__item filters-item one active">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="one">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="one">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="completed-works__item filters-item two">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="two">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="two">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="completed-works__item filters-item three">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="three">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="three">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="completed-works__item filters-item four">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="four">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="four">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="completed-works__item filters-item five">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="five">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="five">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="completed-works__item filters-item six">
+          <div class="completed-works__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="six">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+              <div class="completed-works__slide swiper-slide">
+                <a class="completed-works__wrapper" href="images/completed-works-1.webp" data-fancybox="six">
+                  <img class="completed-works__img _img" src="images/completed-works-1.webp" alt="completed-works-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section-img">
-      <img class="_img" src="images/meeting-save-2.webp" alt="meeting-save-2">
-    </div>
-  </section>
-  <section class="main-specialization">
+  </div>
+</section>
+  <section class="implement-projects-pinterest">
   <div class="container">
-    <div class="main-specialization__inner">
-      <div class="main-specialization__left">
-        <div class="main-specialization__logo">
-          <svg width="75" height="80" viewBox="0 0 75 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_2081_17027)">
-<mask id="mask0_2081_17027" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="30" y="0" width="45" height="42">
-<path d="M74.745 0H30.5293V41.8258H74.745V0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_2081_17027)">
-<path d="M74.745 0H30.5293V41.8258H74.745V0Z" fill="url(#paint0_linear_2081_17027)"/>
-</g>
-<mask id="mask1_2081_17027" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="30" y="43" width="45" height="37">
-<path d="M74.745 43.3079V76.7361C74.745 78.4146 73.3724 79.7839 71.7009 79.7839H30.5293V43.3079H74.745Z" fill="white"/>
-</mask>
-<g mask="url(#mask1_2081_17027)">
-<path d="M74.745 43.3079H30.5293V79.7839H74.745V43.3079Z" fill="url(#paint1_linear_2081_17027)"/>
-</g>
-<mask id="mask2_2081_17027" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="42">
-<path d="M3.04412 0H29.0245V41.8258H0V3.04785C0 1.37423 1.37255 0 3.04412 0Z" fill="white"/>
-</mask>
-<g mask="url(#mask2_2081_17027)">
-<path d="M29.0245 0H0V41.8258H29.0245V0Z" fill="url(#paint2_linear_2081_17027)"/>
-</g>
-<mask id="mask3_2081_17027" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="43" width="30" height="37">
-<path d="M29.0245 43.3079H0V79.7839H29.0245V43.3079Z" fill="white"/>
-</mask>
-<g mask="url(#mask3_2081_17027)">
-<path d="M29.0245 43.3079H0V79.7839H29.0245V43.3079Z" fill="url(#paint3_linear_2081_17027)"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.3484 20.2602C10.3876 20.1964 10.4318 20.1424 10.4857 20.0933C10.569 20.0099 10.6278 19.9755 10.6327 19.9755L10.6376 19.9706L10.6425 19.9657L16.4759 15.2541C16.618 15.1412 16.7896 15.0823 16.9563 15.0823H61.7259C62.1523 15.0823 62.4955 15.4258 62.4955 15.8528V62.9449C62.4955 63.205 62.3631 63.4356 62.167 63.5731L56.2357 68.3633C56.0592 68.5056 55.8386 68.5547 55.6327 68.5203C55.5641 68.5301 55.4906 68.5301 55.4121 68.5301H51.6572C51.6867 68.6283 51.7014 68.7363 51.7014 68.8442V69.3301C51.7014 69.924 51.2161 70.4148 50.618 70.4148H49.4465C48.8533 70.4148 48.3631 69.9289 48.3631 69.3301V68.8442C48.3631 68.7363 48.3778 68.6332 48.4072 68.5301H18.3337C18.3631 68.6283 18.3778 68.7363 18.3778 68.8442V69.3301C18.3778 69.924 17.8925 70.4148 17.2945 70.4148H16.1229C15.5298 70.4148 15.0396 69.9289 15.0396 69.3301V68.8442C15.0396 68.7363 15.0543 68.6332 15.0837 68.5301H10.9857C10.2455 68.5301 10.2161 67.7596 10.2161 67.7596V20.7804C10.2161 20.7804 10.1818 20.4712 10.3386 20.2602" fill="#E3000F"/>
-<path d="M61.7403 15.8528H16.9707V62.9448H61.7403V15.8528Z" fill="white"/>
-<path d="M62.1814 15.2539H16.4902V63.5778H62.1814V15.2539Z" fill="#ECECEC"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11 20.6773L16.9706 15.8528V62.9497L11 67.7693V20.6773Z" fill="#B1B2B3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11 30.0958L16.9706 25.2712H47.951L41.9755 30.0958H11Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 62.9497H61.7402L55.7696 67.7693H11L16.9706 62.9497Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9746 20.6773L47.9501 15.8528V62.9497L41.9746 67.7693V20.6773Z" fill="#B1B2B3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M59.5638 16.6234H17.2403L13.1716 19.9068H55.5001L59.5687 16.6234H59.5638ZM16.9707 15.0823H61.7403C62.1667 15.0823 62.5099 15.4258 62.5099 15.8528C62.5099 16.1129 62.3775 16.3436 62.1814 16.486L56.2501 21.2761C56.1079 21.389 55.9363 21.4479 55.7697 21.4479H11.0001C10.5736 21.4479 10.2305 21.1044 10.2305 20.6774C10.2305 20.4172 10.3579 20.1866 10.5589 20.0442L16.4952 15.2541C16.6373 15.1412 16.8089 15.0823 16.9756 15.0823H16.9707Z" fill="#97989C"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9746 39.514L47.9501 34.6895H61.7393L55.7687 39.514H41.9746Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9746 48.9324L47.9501 44.1128H61.7393L55.7687 48.9324H41.9746Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9746 58.3509L47.9501 53.5312H61.7393L55.7687 58.3509H41.9746Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M41.9746 30.0958L47.9501 25.2712H61.7393L55.7687 30.0958H41.9746Z" fill="#D9DADA"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M55.3275 20.0441L61.2588 15.2539C61.5873 14.9889 62.0726 15.0429 62.3373 15.3717C62.45 15.514 62.5088 15.6858 62.5039 15.8527V62.9447C62.5039 63.2048 62.3716 63.4355 62.1755 63.5778L56.2441 68.368C55.9157 68.633 55.4304 68.579 55.1657 68.2502C55.053 68.1079 54.9941 67.9361 54.9941 67.7692V20.6772C54.9941 20.4171 55.1216 20.1864 55.3226 20.0441" fill="#B1B2B3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 15.8528H61.7402L55.7696 20.6773H11L16.9706 15.8528Z" fill="#E7E7E7"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M42.7443 21.4479V29.3252H54.9943V21.4479H42.7443ZM42.7443 38.7436H54.9943V30.8663H42.7443V38.7436ZM42.7443 48.162H54.9943V40.2847H42.7443V48.162ZM54.9943 59.1215H42.7443V66.9988H54.9943V59.1215ZM42.7443 57.5804H54.9943V49.7031H42.7443V57.5804ZM27.3472 66.9988V30.8663H41.205V67.0037H27.3472V66.9988ZM25.6266 30.8614V66.9988H11.7688V30.8663H25.6266V30.8614ZM25.6266 29.3203V21.443H11.7688V29.3203H25.6266ZM27.3472 21.443V29.3203H41.205V21.443H27.3472ZM10.2295 66.3608V20.7804C10.2295 20.7804 10.1952 20.4712 10.3521 20.2601C10.5041 20.0491 10.6413 19.9755 10.6413 19.9755C10.6413 19.9755 10.7099 19.9019 10.8962 19.9019H55.1658C55.1658 19.9019 56.5335 20.0785 56.5335 21.3006V67.5583C56.5335 68.0344 56.2835 68.535 55.4207 68.535H51.6658C51.6952 68.6331 51.7099 68.7411 51.7099 68.8491V69.335C51.7099 69.9289 51.2246 70.4196 50.6266 70.4196H49.455C48.8619 70.4196 48.3717 69.9338 48.3717 69.335V68.8491C48.3717 68.7411 48.3864 68.6381 48.4158 68.535H18.3325C18.3619 68.6331 18.3766 68.7411 18.3766 68.8491V69.335C18.3766 69.9289 17.8913 70.4196 17.2933 70.4196H16.1217C15.5286 70.4196 15.0384 69.9338 15.0384 69.335V68.8491C15.0384 68.7411 15.0531 68.6381 15.0825 68.535H10.9845C10.2443 68.535 10.2148 67.7644 10.2148 67.7644V66.3558L10.2295 66.3608Z" fill="#96979B"/>
-<path d="M25.6274 21.4478H11.7695V67.0036H25.6274V21.4478Z" fill="white"/>
-<path d="M41.2055 21.4478H27.3477V67.0036H41.2055V21.4478Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9022 40.3289H23.1326C23.5247 40.3289 23.8434 40.6479 23.8434 41.0405V47.4111C23.8434 47.8037 23.5247 48.1227 23.1326 48.1227H22.9022C22.51 48.1227 22.1914 47.8037 22.1914 47.4111V41.0405C22.1914 40.6479 22.51 40.3289 22.9022 40.3289Z" fill="#7D7D7D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.8436 40.3289H30.074C30.4661 40.3289 30.7848 40.6479 30.7848 41.0405V47.4111C30.7848 47.8037 30.4661 48.1227 30.074 48.1227H29.8436C29.4514 48.1227 29.1328 47.8037 29.1328 47.4111V41.0405C29.1328 40.6479 29.4514 40.3289 29.8436 40.3289Z" fill="#7D7D7D"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_2081_17027" x1="29.2205" y1="20.9129" x2="74.7499" y2="20.9129" gradientUnits="userSpaceOnUse">
-<stop stop-color="#E41B0E"/>
-<stop offset="1" stop-color="#CB081F"/>
-</linearGradient>
-<linearGradient id="paint1_linear_2081_17027" x1="29.0293" y1="61.5459" x2="74.7499" y2="61.5459" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6DB1E2"/>
-<stop offset="1" stop-color="#234194"/>
-</linearGradient>
-<linearGradient id="paint2_linear_2081_17027" x1="0" y1="20.9129" x2="29.0245" y2="20.9129" gradientUnits="userSpaceOnUse">
-<stop stop-color="#E95110"/>
-<stop offset="1" stop-color="#F18500"/>
-</linearGradient>
-<linearGradient id="paint3_linear_2081_17027" x1="0" y1="61.5459" x2="29.0245" y2="61.5459" gradientUnits="userSpaceOnUse">
-<stop stop-color="#5CB12E"/>
-<stop offset="1" stop-color="#89BD21"/>
-</linearGradient>
-<clipPath id="clip0_2081_17027">
-<rect width="75" height="80" fill="white"/>
-</clipPath>
-</defs>
+    <h2 class="implement-projects-pinterest__title _title">
+      Реализуем проекты по вашим<br>
+      фотографиям из Pinterest
+    </h2>
+    <p class="implement-projects-pinterest__subtitle _subtitle">
+      Если вы нашли в интернете дизайн мебели, который вам нравится,<br>
+      мы адаптируем его под ваши размеры и бюджет
+    </p>
+    <div class="implement-projects-pinterest__items">
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.332 18.6671C16.332 20.7321 15.4337 22.5988 13.9987 23.8704C12.762 24.9904 11.1287 25.6671 9.33203 25.6671C5.47036 25.6671 2.33203 22.5288 2.33203 18.6671C2.33203 15.4471 4.52536 12.7171 7.4887 11.9121C8.2937 13.9421 10.0204 15.5054 12.1554 16.0888C12.7387 16.2521 13.357 16.3338 13.9987 16.3338C14.6404 16.3338 15.2587 16.2521 15.842 16.0888C16.157 16.8821 16.332 17.7571 16.332 18.6671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 9.33398C21 10.244 20.825 11.119 20.51 11.9123C19.705 13.9423 17.9783 15.5057 15.8433 16.089C15.26 16.2523 14.6417 16.334 14 16.334C13.3583 16.334 12.74 16.2523 12.1567 16.089C10.0217 15.5057 8.295 13.9423 7.49 11.9123C7.175 11.119 7 10.244 7 9.33398C7 5.47232 10.1383 2.33398 14 2.33398C17.8617 2.33398 21 5.47232 21 9.33398Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.6667 18.6671C25.6667 22.5288 22.5283 25.6671 18.6667 25.6671C16.87 25.6671 15.2367 24.9904 14 23.8704C15.435 22.5988 16.3333 20.7321 16.3333 18.6671C16.3333 17.7571 16.1583 16.8821 15.8433 16.0888C17.9783 15.5054 19.705 13.9421 20.51 11.9121C23.4733 12.7171 25.6667 15.4471 25.6667 18.6671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
         </div>
-        <h2 class="main-specialization__title">
-          Основная специализация<br>
-          компании — <span>шкафы, гардеробные,<br>
-          прихожие, мебель в ванную<br>
-          и другие встроенные решения</span><br>
-          под конкретное помещение
-        </h2>
-        <p class="main-specialization__text">
-          Такой профиль позволяет глубже работать со сложными задачами:<br>
-          ниши, углы, высокие потолки, нестандартные размеры, сочетание<br>
-          нескольких зон хранения в одном проекте
-        </p>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            Мы <span>подбираем в салоне<br>
+              максимально похожие декоры</span> пленки,<br>
+            ЛДСП и фрезеровки фасадов
+          </p>
+        </div>
       </div>
-      <div class="main-specialization__right">
-        <div class="main-specialization__wrapper">
-          <img class="main-specialization__img _img" src="images/main-specialization-1.webp"
-            alt="main-specialization-1">
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.5013 10.4987C4.78997 10.4987 5.83464 9.45403 5.83464 8.16536C5.83464 6.8767 4.78997 5.83203 3.5013 5.83203C2.21264 5.83203 1.16797 6.8767 1.16797 8.16536C1.16797 9.45403 2.21264 10.4987 3.5013 10.4987Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.5013 10.4987C25.79 10.4987 26.8346 9.45403 26.8346 8.16536C26.8346 6.8767 25.79 5.83203 24.5013 5.83203C23.2126 5.83203 22.168 6.8767 22.168 8.16536C22.168 9.45403 23.2126 10.4987 24.5013 10.4987Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.1667 8.16602H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5026 8.16602H5.83594" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.7513 19.25V21.5833C8.7513 22.295 8.31964 22.9133 7.71297 23.17C7.4913 23.275 7.25797 23.3333 7.0013 23.3333H4.66797C3.69964 23.3333 2.91797 22.5517 2.91797 21.5833V19.25C2.91797 18.2817 3.69964 17.5 4.66797 17.5H7.0013C7.96964 17.5 8.7513 18.2817 8.7513 19.25Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.0833 19.25V21.5833C25.0833 22.5517 24.3017 23.3333 23.3333 23.3333H21C20.7433 23.3333 20.51 23.275 20.2883 23.17C19.6817 22.9133 19.25 22.295 19.25 21.5833V19.25C19.25 18.2817 20.0317 17.5 21 17.5H23.3333C24.3017 17.5 25.0833 18.2817 25.0833 19.25Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 6.41602V9.91602C17.5 10.8727 16.7067 11.666 15.75 11.666H12.25C11.2933 11.666 10.5 10.8727 10.5 9.91602V6.41602C10.5 5.45935 11.2933 4.66602 12.25 4.66602H15.75C16.7067 4.66602 17.5 5.45935 17.5 6.41602Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 9.01758C20.265 10.4176 22.1667 13.4276 22.1667 16.9159C22.1667 17.1143 22.155 17.3009 22.1317 17.4993" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.87094 17.4993C5.8476 17.3009 5.83594 17.1143 5.83594 16.9159C5.83594 13.4276 7.7376 10.4176 10.5026 9.01758" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </div>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            <span>Проектируем аналогичную<br>
+              конструкцию</span> с учетом ваших розеток,<br>
+            выступов и перепадов высот
+          </p>
+        </div>
+      </div>
+      <div class="implement-projects-pinterest__item">
+        <div class="implement-projects-pinterest__item-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.4831 22.1439H8.51641C8.02641 22.1439 7.47808 21.7589 7.31474 21.2922L2.48474 7.78224C1.79641 5.84557 2.60141 5.25057 4.25808 6.44057L8.80808 9.69557C9.56641 10.2206 10.4297 9.95224 10.7564 9.10057L12.8097 3.62891C13.4631 1.87891 14.5481 1.87891 15.2014 3.62891L17.2547 9.10057C17.5814 9.95224 18.4447 10.2206 19.1914 9.69557L23.4614 6.65057C25.2814 5.34391 26.1564 6.00891 25.4097 8.12057L20.6964 21.3156C20.5214 21.7589 19.9731 22.1439 19.4831 22.1439Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.58203 25.666H20.4154" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.082 16.334H16.9154" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </div>
+        <div class="implement-projects-pinterest__item-info">
+          <p class="implement-projects-pinterest__item-text">
+            <span>Заменяем дорогие европейские<br>
+              комплектующие на надежные аналоги,</span><br>
+            если необходимо оптимизировать бюджет<br>
+            без потери качества сборки
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section>
-    <section class="responsibility">
-    <div class="container">
-      <h2 class="responsibility__title _title">
-        Мы берём на себя проектирование,<br>
-        производство, комплектацию, доставку и монтаж
-      </h2>
-    </div>
-    <div class="responsibility__swiper swiper">
-      <div class="swiper-wrapper">
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-1.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-1.webp"
-              alt="responsibility-1">
-          </a>
-        </div>
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-2.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-2.webp"
-              alt="responsibility-2">
-          </a>
-        </div>
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-3.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-3.webp"
-              alt="responsibility-3">
-          </a>
-        </div>
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-1.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-1.webp"
-              alt="responsibility-1">
-          </a>
-        </div>
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-2.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-2.webp"
-              alt="responsibility-2">
-          </a>
-        </div>
-        <div class="responsibility__slide swiper-slide">
-          <a class="responsibility__link" href="images/responsibility-3.webp"
-            data-fancybox="responsibility">
-            <img class="responsibility__img _img" src="images/responsibility-3.webp"
-              alt="responsibility-3">
-          </a>
-        </div>
+  <div class="big-auto-swiper swiper">
+  <div class="swiper-wrapper">
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-1.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-1.webp" alt="implement-projects-pinterest-1">
+        </a>
       </div>
-    </div>
-  </section>
-  <section class="history">
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-2.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-2.webp" alt="implement-projects-pinterest-2">
+        </a>
+      </div>
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-3.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-3.webp" alt="implement-projects-pinterest-3">
+        </a>
+      </div>
+    
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-1.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-1.webp" alt="implement-projects-pinterest-1">
+        </a>
+      </div>
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-2.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-2.webp" alt="implement-projects-pinterest-2">
+        </a>
+      </div>
+     
+      <div class="big-auto-swiper__slide swiper-slide">
+        <a class="big-auto-swiper__link" href="images/implement-projects-pinterest-3.webp" data-fancybox="big-auto-swiper">
+          <img class="big-auto-swiper__img _img" src="images/implement-projects-pinterest-3.webp" alt="implement-projects-pinterest-3">
+        </a>
+      </div>
+    
+
+  </div>
+</div>
   <div class="container">
-    <h2 class="history__title _title">Как развивалась компания</h2>
-    <div class="history__items">
-      <div class="history__item">
-        <div class="history__item-left">
-          <h3 class="history__item-title">
-            2015 г.
-          </h3>
-          <hr class="history__item-hr">
-          <p class="history__item-text">
-            Начало работы. Первые салоны, первые заказы<br>
-            на мебель под конкретные помещения
-          </p>
-        </div>
-        <div class="history__item-images">
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-1.webp" alt="history-1">
-          </div>
-        </div>
-      </div>
-      <div class="history__item">
-        <div class="history__item-left">
-          <h3 class="history__item-title">
-            2016–2019 г.
-          </h3>
-          <hr class="history__item-hr">
-          <p class="history__item-text">
-            Расширение сети салонов. Формирование<br>
-            собственной методологии проектирования<br>
-            и работы с клиентом
-          </p>
-        </div>
-        <div class="history__item-images">
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-2.webp" alt="history-2">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-3.webp" alt="history-3">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-4.webp" alt="history-4">
-          </div>
-        </div>
-      </div>
-      <div class="history__item">
-        <div class="history__item-left">
-          <h3 class="history__item-title">
-            2020 г.
-          </h3>
-          <hr class="history__item-hr">
-          <p class="history__item-text">
-            Запуск собственного производства.<br>
-            Переход от работы через подрядчиков к полному<br>
-            внутреннему циклу – от проектирования<br>
-            до изготовления и монтажа.
-          </p>
-        </div>
-        <div class="history__item-images">
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-5.webp" alt="history-5">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-6.webp" alt="history-6">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-7.webp" alt="history-7">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-8.webp" alt="history-8">
-          </div>
-        </div>
-      </div>
-      <div class="history__item">
-        <div class="history__item-left">
-          <h3 class="history__item-title">
-            2021–2024 г.
-          </h3>
-          <hr class="history__item-hr">
-          <p class="history__item-text">
-            Рост производственных мощностей. Развитие<br>
-            салонной сети до 5 точек в Екатеринбурге.<br>
-            Накопленный опыт в сложных и нестандартных<br>
-            проектах.
-          </p>
-        </div>
-        <div class="history__item-images">
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-9.webp" alt="history-9">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-10.webp" alt="history-10">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-11.webp" alt="history-11">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-12.webp" alt="history-12">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-13.webp" alt="history-13">
-          </div>
-        </div>
-      </div>
-      <div class="history__item">
-        <div class="history__item-left">
-          <h3 class="history__item-title">
-            2026
-          </h3>
-          <hr class="history__item-hr">
-          <p class="history__item-text">
-            5 салонов, собственное производство,<br>
-            более 15 сотрудников на площадке, гарантия<br>
-            и сервис после монтажа
-          </p>
-        </div>
-        <div class="history__item-images">
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-14.webp" alt="history-14">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-15.webp" alt="history-15">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-16.webp" alt="history-16">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-17.webp" alt="history-17">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-18.webp" alt="history-18">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-19.webp" alt="history-19">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-20.webp" alt="history-20">
-          </div>
-          <div class="history__item-wrapper">
-            <img class="history__item-img _img" src="images/history-21.webp" alt="history-21">
-          </div>
-        </div>
-      </div>
+    <div class="implement-projects-pinterest__btns">
+      <a class="implement-projects-pinterest__btn _main-btn" href="#callback" data-fancybox>
+        Рассчитать проект
+      </a>
+      <a class="implement-projects-pinterest__btn _red-btn" href="#callback" data-fancybox>
+        Записаться на встречу
+      </a>
     </div>
   </div>
 </section>
-  <section class="examination">
+  <div class="divider @@class"></div>
+  <section class="display-furniture">
   <div class="container">
-    <h2 class="examination__title _title">
-      За 11 лет мы наработали глубокую<br>
-      экспертизу в сложных проектах
+    <h2 class="display-furniture__title _title">
+      Мебель, установленная у вас дома,<br>
+      будет выглядеть ровно так,
+    </h2>
+    <p class="display-furniture__subtitle _subtitle">
+      как мы спроектировали ее в салоне
+    </p>
+    <div class="display-furniture__items">
+      <a class="display-furniture__item" href="#">
+        <img class="display-furniture__item-img _img" src="images/display-furniture-1.webp" alt="display-furniture-1">
+        <div class="overlay"></div>
+        <h4 class="display-furniture__item-title">
+          3D-эскиз
+        </h4>
+      </a>
+      <a class="display-furniture__item" href="#">
+        <img class="display-furniture__item-img _img" src="images/display-furniture-2.webp" alt="display-furniture-2">
+        <div class="overlay"></div>
+        <h4 class="display-furniture__item-title _red-bg">
+          Реализация
+        </h4>
+      </a>
+    </div>
+  </div>
+</section>
+  <section class="project-videos">
+  <div class="container">
+    <h2 class="project-videos__title _title">
+      Или посмотрите больше<br>
+      о реализованных проектах в полезных<br>
+      видео от специалистов фабрики
     </h2>
     <div class="cursor @@class">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
@@ -829,256 +845,127 @@
     </style>
   </svg>
 </div>
-    <div class="examination__items">
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-1.webp" alt="examination-1">
+    <div class="project-videos__items">
+      <a class="project-videos__item" href="images/project-videos-1.webp" data-fancybox>
+        <img class="project-videos__item-img _img" src="images/project-videos-1.webp" alt="project-videos-1">
         <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="project-videos__item-btn">
+          <div class="play">
+  <div class="play__inner">
+    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5.73805C17.6667 7.27765 17.6667 11.1267 15 12.6663L6 17.8624C3.33333 19.402 -9.73687e-07 17.4775 -8.39091e-07 14.3983L-3.84828e-07 4.00599C-2.50232e-07 0.926793 3.33333 -0.997707 6 0.541894L15 5.73805Z" fill="white"/>
 </svg>
 
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Встроенные шкафы
-            и гардеробные
-          </h4>
-          <p class="examination__item-text">
-            Нестандартные размеры, сложная геометрия, высота до потолка, угловые зоны
+    <svg class="play__text" viewBox="0 0 200 200" width="160" height="160" data-text="@@text">
+      <path id="text-path" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF"
+        text-transform="uppercase">
+        <textPath href="#text-path" startOffset="5%">
+          @@text
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+          <p class="project-videos__item-text">
+            Посмотреть<br>
+            отзыв целиком
           </p>
         </div>
       </a>
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-2.webp" alt="examination-2">
+      <a class="project-videos__item" href="images/project-videos-2.webp" data-fancybox>
+        <img class="project-videos__item-img _img" src="images/project-videos-2.webp" alt="project-videos-2">
         <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="project-videos__item-btn">
+          <div class="play">
+  <div class="play__inner">
+    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5.73805C17.6667 7.27765 17.6667 11.1267 15 12.6663L6 17.8624C3.33333 19.402 -9.73687e-07 17.4775 -8.39091e-07 14.3983L-3.84828e-07 4.00599C-2.50232e-07 0.926793 3.33333 -0.997707 6 0.541894L15 5.73805Z" fill="white"/>
 </svg>
 
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Прихожие
-          </h4>
-          <p class="examination__item-text">
-            Несколько функциональных зон<br>
-            в ограниченном пространстве
+    <svg class="play__text" viewBox="0 0 200 200" width="160" height="160" data-text="@@text">
+      <path id="text-path" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF"
+        text-transform="uppercase">
+        <textPath href="#text-path" startOffset="5%">
+          @@text
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+          <p class="project-videos__item-text">
+            Посмотреть<br>
+            отзыв целиком
           </p>
         </div>
       </a>
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-3.webp" alt="examination-3">
+      <a class="project-videos__item" href="images/project-videos-3.webp" data-fancybox>
+        <img class="project-videos__item-img _img" src="images/project-videos-3.webp" alt="project-videos-3">
         <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="project-videos__item-btn">
+          <div class="play">
+  <div class="play__inner">
+    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5.73805C17.6667 7.27765 17.6667 11.1267 15 12.6663L6 17.8624C3.33333 19.402 -9.73687e-07 17.4775 -8.39091e-07 14.3983L-3.84828e-07 4.00599C-2.50232e-07 0.926793 3.33333 -0.997707 6 0.541894L15 5.73805Z" fill="white"/>
 </svg>
 
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Мебель для ванной
-          </h4>
-          <p class="examination__item-text">
-            Тумбы, зеркала, подсветка, инсталляция, решения под инженерные ограничения
+    <svg class="play__text" viewBox="0 0 200 200" width="160" height="160" data-text="@@text">
+      <path id="text-path" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF"
+        text-transform="uppercase">
+        <textPath href="#text-path" startOffset="5%">
+          @@text
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+          <p class="project-videos__item-text">
+            Посмотреть<br>
+            отзыв целиком
           </p>
         </div>
       </a>
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-4.webp" alt="examination-4">
+      <a class="project-videos__item" href="images/project-videos-4.webp" data-fancybox>
+        <img class="project-videos__item-img _img" src="images/project-videos-4.webp" alt="project-videos-4">
         <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="project-videos__item-btn">
+          <div class="play">
+  <div class="play__inner">
+    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5.73805C17.6667 7.27765 17.6667 11.1267 15 12.6663L6 17.8624C3.33333 19.402 -9.73687e-07 17.4775 -8.39091e-07 14.3983L-3.84828e-07 4.00599C-2.50232e-07 0.926793 3.33333 -0.997707 6 0.541894L15 5.73805Z" fill="white"/>
 </svg>
 
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Детские и спальни
-          </h4>
-          <p class="examination__item-text">
-            Решения под конкретные сценарии жизни<br>
-            и использования пространства
-          </p>
-        </div>
-      </a>
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-5.webp" alt="examination-5">
-        <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Кухни
-          </h4>
-          <p class="examination__item-text">
-            Индивидуальная компоновка с учётом архитектуры помещения
-          </p>
-        </div>
-      </a>
-      <a class="examination__item" href="#">
-        <img class="examination__item-img _img" src="images/examination-6.webp" alt="examination-6">
-        <div class="overlay"></div>
-        <div class="examination__item-arrow item-arrow">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.51416 26.4852L25.4241 10.5753M26.4847 20.1213L26.4847 9.51465H15.8781" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-        </div>
-        <div class="examination__item-inner _white-text">
-          <h4 class="examination__item-title">
-            Комплексные проекты
-          </h4>
-          <p class="examination__item-text">
-            Несколько помещений в едином стиле<br>
-            и системе хранения
+    <svg class="play__text" viewBox="0 0 200 200" width="160" height="160" data-text="@@text">
+      <path id="text-path" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+      <text font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF"
+        text-transform="uppercase">
+        <textPath href="#text-path" startOffset="5%">
+          @@text
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+          <p class="project-videos__item-text">
+            Посмотреть<br>
+            отзыв целиком
           </p>
         </div>
       </a>
     </div>
   </div>
 </section>
-  <section class="coordination">
+  <section class="branded-salons">
   <div class="container">
-    <div class="coordination__inner">
-      <h2 class="coordination__title _title">
-        Всю координацию,<br>
-        техническую документацию,<br>
-        изготовление и ответственность<br>
-        за итоговую сборку мы берем<br>
-        на себя
-      </h2>
-      <div class="coordination__items">
-        <div class="coordination__item">
-          <div class="coordination__item-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.5 8.16634V19.833C24.5 23.333 22.75 25.6663 18.6667 25.6663H9.33333C5.25 25.6663 3.5 23.333 3.5 19.833V8.16634C3.5 4.66634 5.25 2.33301 9.33333 2.33301H18.6667C22.75 2.33301 24.5 4.66634 24.5 8.16634Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.918 5.25V7.58333C16.918 8.86667 17.968 9.91667 19.2513 9.91667H21.5846" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.33203 15.167H13.9987" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.33203 19.833H18.6654" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-          </div>
-          <p class="coordination__item-text">
-            Один договор и одно<br>
-            ответственное лицо<br>
-            <span>на весь объём работ</span>
-          </p>
-        </div>
-        <div class="coordination__item">
-          <div class="coordination__item-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.0746 2.63648L22.6696 6.73148C23.5563 7.20982 23.5563 8.57482 22.6696 9.05315L15.0746 13.1482C14.398 13.5098 13.6046 13.5098 12.928 13.1482L5.33297 9.05315C4.4463 8.57482 4.4463 7.20982 5.33297 6.73148L12.928 2.63648C13.6046 2.27482 14.398 2.27482 15.0746 2.63648Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.21036 11.8186L11.2687 15.3536C12.1437 15.7969 12.7037 16.6953 12.7037 17.6753V24.3486C12.7037 25.3169 11.6887 25.9353 10.8254 25.5036L3.76703 21.9686C2.89203 21.5253 2.33203 20.6269 2.33203 19.6469V12.9736C2.33203 12.0053 3.34703 11.3869 4.21036 11.8186Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.7902 11.8186L16.7319 15.3536C15.8569 15.7969 15.2969 16.6953 15.2969 17.6753V24.3486C15.2969 25.3169 16.3119 25.9353 17.1752 25.5036L24.2335 21.9686C25.1085 21.5253 25.6685 20.6269 25.6685 19.6469V12.9736C25.6685 12.0053 24.6535 11.3869 23.7902 11.8186Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-          </div>
-          <p class="coordination__item-text">
-            Предсказуемый результат:<br>
-            <span>мебель выглядит и работает так,<br>
-            как согласовано в проекте</span>
-          </p>
-        </div>
-        <div class="coordination__item">
-          <div class="coordination__item-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.33203 2.33301V5.83301" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.668 2.33301V5.83301" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.08203 10.6055H23.9154" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.5 9.91634V19.833C24.5 23.333 22.75 25.6663 18.6667 25.6663H9.33333C5.25 25.6663 3.5 23.333 3.5 19.833V9.91634C3.5 6.41634 5.25 4.08301 9.33333 4.08301H18.6667C22.75 4.08301 24.5 6.41634 24.5 9.91634Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.3113 15.9837H18.3218" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.3113 19.4837H18.3218" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.9949 15.9837H14.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.9949 19.4837H14.0054" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.67849 15.9837H9.68897" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.67849 19.4837H9.68897" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-          </div>
-          <p class="coordination__item-text">
-            Соблюдение сроков: <span>мы не ждём<br>
-            очереди на чужих фабриках,<br>
-            а управляем загрузкой сами</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="stay-in-touch _image-wrapper relative">
-  <div class="overlay"></div>
-  <div class="container relative">
-    <h2 class="stay-in-touch__title _title">
-      Остаемся на связи<br>
-      после монтажа
+    <h2 class="branded-salons__title _title">
+      Фирменные салоны фабрики<br>
+      «Интерес» в г. Екатеринбург
     </h2>
-    <p class="stay-in-touch__subtitle _subtitle">
-      Мы уверены в качестве своей работы,<br>
-      поэтому даем условия, которые выходят<br>
-      за рамки стандартных рыночных предложений
-    </p>
-    <div class="stay-in-touch__items">
-      <div class="stay-in-touch__item">
-        <div class="stay-in-touch__item-icon">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.8601 3.15945L7.79091 5.82279C6.16174 6.43195 4.83008 8.35862 4.83008 10.087V20.6128C4.83008 22.2845 5.93508 24.4803 7.28091 25.4861L13.3726 30.0336C15.3701 31.5353 18.6567 31.5353 20.6542 30.0336L26.7459 25.4861C28.0917 24.4803 29.1967 22.2845 29.1967 20.6128V10.087C29.1967 8.34445 27.8651 6.41779 26.2359 5.80862L19.1667 3.15945C17.9626 2.72029 16.0359 2.72029 14.8601 3.15945Z" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.8203 16.8157L15.1011 19.0965L21.1928 13.0049" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-        </div>
-        <div class="stay-in-touch__item-info">
-          <h4 class="stay-in-touch__item-title">
-            2 года полной гарантии
-          </h4>
-          <hr class="stay-in-touch__item-hr">
-          <ul class="stay-in-touch__item-list list-point-red">
-            <li class="stay-in-touch__item-point">конструктив</li>
-            <li class="stay-in-touch__item-point">фасады</li>
-            <li class="stay-in-touch__item-point">фурнитуру</li>
-          </ul>
-        </div>
-      </div>
-      <div class="stay-in-touch__item">
-        <div class="stay-in-touch__item-icon">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.9776 15.3988C12.8359 15.3847 12.6659 15.3847 12.5101 15.3988C9.13844 15.2855 6.46094 12.523 6.46094 9.12301C6.46094 5.65217 9.26594 2.83301 12.7509 2.83301C16.2218 2.83301 19.0409 5.65217 19.0409 9.12301C19.0268 12.523 16.3493 15.2855 12.9776 15.3988Z" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.2467 5.66699C25.995 5.66699 28.205 7.89116 28.205 10.6253C28.205 13.3028 26.08 15.4845 23.4308 15.5837C23.3175 15.5695 23.19 15.5695 23.0625 15.5837" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.89352 20.627C2.46518 22.922 2.46518 26.662 5.89352 28.9428C9.78935 31.5495 16.1785 31.5495 20.0743 28.9428C23.5027 26.6478 23.5027 22.9078 20.0743 20.627C16.1927 18.0345 9.80352 18.0345 5.89352 20.627Z" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25.9824 28.333C27.0024 28.1205 27.9658 27.7097 28.7591 27.1005C30.9691 25.443 30.9691 22.7088 28.7591 21.0513C27.9799 20.4563 27.0308 20.0597 26.0249 19.833" stroke="#EF4E06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-        </div>
-        <div class="stay-in-touch__item-info">
-          <h4 class="stay-in-touch__item-title">
-            Сервисное<br>
-            сопровождение — бессрочно:
-          </h4>
-          <hr class="stay-in-touch__item-hr">
-          <ul class="stay-in-touch__item-list list-point-red">
-            <li class="stay-in-touch__item-point">регулировка фурнитуры</li>
-            <li class="stay-in-touch__item-point">повторный заказ в том же стиле и материалах</li>
-            <li class="stay-in-touch__item-point">ремонт или замена по необходимости</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="branches">
-  <div class="container">
-    <h2 class="branches__title _title">
-      Мы открыли 5 просторных салонов в крупных мебельных и торговых центрах Екатеринбурга
-    </h2>
-    <p class="branches__subtitle _subtitle">
-      В салонах присутствуют:
+    <p class="branded-salons__subtitle _subtitle">
+      Если вы хотите спокойно посмотреть решения, сравнить материалы<br>
+      и обсудить проект с дизайнером, начните с визита в салон
     </p>
     <div class="cursor @@class">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
@@ -1143,52 +1030,949 @@
     </style>
   </svg>
 </div>
-    <div class="branches__items">
-      <div class="branches__item">
-        <img class="branches__item-img _img" src="images/branches-1.webp" alt="branches-1">
-        <div class="overlay"></div>
-        <div class="branches__item-inner _white-text">
-          <h4 class="branches__item-title">
-            Полноразмерные<br>
-            экспозиции:
-          </h4>
-          <p class="branches__item-text">
-            кухни, шкафы, прихожие и детские<br>
-            зоны в реальную величину
-          </p>
-        </div>
+    <div class="branded-salons__filters filters">
+      <div class="branded-salons__btns">
+        <div class="branded-salons__btn filters-btn active" data-filter="ema">МЦ Эма</div>
+        <div class="branded-salons__btn filters-btn" data-filter="cosmos">ТЦ Космос</div>
+        <div class="branded-salons__btn filters-btn" data-filter="gulliver">МЦ Гулливер</div>
+        <div class="branded-salons__btn filters-btn" data-filter="kor">ТК Кор</div>
+        <div class="branded-salons__btn filters-btn" data-filter="belka">ТЦ Белка Маркет</div>
       </div>
-      <div class="branches__item">
-        <img class="branches__item-img _img" src="images/branches-2.webp" alt="branches-2">
-        <div class="overlay"></div>
-        <div class="branches__item-inner _white-text">
-          <h4 class="branches__item-title">
-            Библиотека материалов:
-          </h4>
-          <p class="branches__item-text">
-            крупные образцы ЛДСП, МДФ, стекла<br>
-            и столешниц, которые можно приложить<br>
-            друг к другу
-          </p>
+      <div class="branded-salons__items">
+        <div class="branded-salons__item filters-item ema active">
+          <div class="branded-salons__item-left">
+            <h4 class="branded-salons__item-title">
+              МЦ Эма
+            </h4>
+            <div class="branded-salons__elems">
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.35 9.05004L15.01 16.59C14.45 18.38 11.94 18.41 11.35 16.63L10.65 14.56C10.46 13.99 10.01 13.53 9.43997 13.35L7.35997 12.65C5.58997 12.06 5.61997 9.53004 7.40997 8.99004L14.95 6.64003C16.43 6.19003 17.82 7.58004 17.35 9.05004Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Адрес:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА»,
+                    2 этаж
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#EF4E06" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Телефон:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    <a class="phone-block @@class _link" href="tel:+73433121462">
+  +7 343 312 14 62
+</a>
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Время работы:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    11:00-20:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="branded-salons__item-btns">
+              <a class="branded-salons__item-btn _main-btn" href="#callback" data-fancybox>
+                Записаться на встречу
+              </a>
+              <a class="branded-salons__item-btn _red-btn" href="#">
+                Узнать о салоне больше
+              </a>
+            </div>
+          </div>
+          <div class="branded-salons__item-right">
+            <div class="branded-salons__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-1.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-1.webp"
+                      alt="branded-salons-1">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-2.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-2.webp"
+                      alt="branded-salons-2">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-3.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-3.webp"
+                      alt="branded-salons-3">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-4.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-4.webp"
+                      alt="branded-salons-4">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-5.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-5.webp"
+                      alt="branded-salons-5">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-6.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-6.webp"
+                      alt="branded-salons-6">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-7.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-7.webp"
+                      alt="branded-salons-7">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-8.webp"
+                    data-fancybox="branded-salons-1">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-8.webp"
+                      alt="branded-salons-8">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div thumbsSlider="" class="branded-salons__thumbswiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-1.webp" alt="branded-salons-thumb-1"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-2.webp" alt="branded-salons-thumb-2"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-3.webp" alt="branded-salons-thumb-3"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-4.webp" alt="branded-salons-thumb-4"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-5.webp" alt="branded-salons-thumb-5"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-6.webp" alt="branded-salons-thumb-6"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-7.webp" alt="branded-salons-thumb-7"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-8.webp" alt="branded-salons-thumb-8"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="branches__item">
-        <img class="branches__item-img _img" src="images/branches-3.webp" alt="branches-3">
-        <div class="overlay"></div>
-        <div class="branches__item-inner _white-text">
-          <h4 class="branches__item-title">
-            Экспертная сессия:
-          </h4>
-          <p class="branches__item-text">
-            детальный разбор вашей задачи<br>
-            с дизайнером и 3D-моделирование на месте
-          </p>
+        <div class="branded-salons__item filters-item cosmos">
+          <div class="branded-salons__item-left">
+            <h4 class="branded-salons__item-title">
+              ТЦ Космос
+            </h4>
+            <div class="branded-salons__elems">
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.35 9.05004L15.01 16.59C14.45 18.38 11.94 18.41 11.35 16.63L10.65 14.56C10.46 13.99 10.01 13.53 9.43997 13.35L7.35997 12.65C5.58997 12.06 5.61997 9.53004 7.40997 8.99004L14.95 6.64003C16.43 6.19003 17.82 7.58004 17.35 9.05004Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Адрес:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА»,
+                    2 этаж
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#EF4E06" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Телефон:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    <a class="phone-block @@class _link" href="tel:+73433121462">
+  +7 343 312 14 62
+</a>
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Время работы:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    11:00-20:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="branded-salons__item-btns">
+              <a class="branded-salons__item-btn _main-btn" href="#callback" data-fancybox>
+                Записаться на встречу
+              </a>
+              <a class="branded-salons__item-btn _red-btn" href="#">
+                Узнать о салоне больше
+              </a>
+            </div>
+          </div>
+          <div class="branded-salons__item-right">
+            <div class="branded-salons__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-1.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-1.webp"
+                      alt="branded-salons-1">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-2.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-2.webp"
+                      alt="branded-salons-2">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-3.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-3.webp"
+                      alt="branded-salons-3">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-4.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-4.webp"
+                      alt="branded-salons-4">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-5.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-5.webp"
+                      alt="branded-salons-5">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-6.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-6.webp"
+                      alt="branded-salons-6">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-7.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-7.webp"
+                      alt="branded-salons-7">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-8.webp"
+                    data-fancybox="branded-salons-2">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-8.webp"
+                      alt="branded-salons-8">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div thumbsSlider="" class="branded-salons__thumbswiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-1.webp" alt="branded-salons-thumb-1"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-2.webp" alt="branded-salons-thumb-2"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-3.webp" alt="branded-salons-thumb-3"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-4.webp" alt="branded-salons-thumb-4"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-5.webp" alt="branded-salons-thumb-5"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-6.webp" alt="branded-salons-thumb-6"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-7.webp" alt="branded-salons-thumb-7"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-8.webp" alt="branded-salons-thumb-8"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branded-salons__item filters-item gulliver">
+          <div class="branded-salons__item-left">
+            <h4 class="branded-salons__item-title">
+              МЦ Гулливер
+            </h4>
+            <div class="branded-salons__elems">
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.35 9.05004L15.01 16.59C14.45 18.38 11.94 18.41 11.35 16.63L10.65 14.56C10.46 13.99 10.01 13.53 9.43997 13.35L7.35997 12.65C5.58997 12.06 5.61997 9.53004 7.40997 8.99004L14.95 6.64003C16.43 6.19003 17.82 7.58004 17.35 9.05004Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Адрес:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА»,
+                    2 этаж
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#EF4E06" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Телефон:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    <a class="phone-block @@class _link" href="tel:+73433121462">
+  +7 343 312 14 62
+</a>
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Время работы:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    11:00-20:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="branded-salons__item-btns">
+              <a class="branded-salons__item-btn _main-btn" href="#callback" data-fancybox>
+                Записаться на встречу
+              </a>
+              <a class="branded-salons__item-btn _red-btn" href="#">
+                Узнать о салоне больше
+              </a>
+            </div>
+          </div>
+          <div class="branded-salons__item-right">
+            <div class="branded-salons__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-1.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-1.webp"
+                      alt="branded-salons-1">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-2.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-2.webp"
+                      alt="branded-salons-2">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-3.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-3.webp"
+                      alt="branded-salons-3">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-4.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-4.webp"
+                      alt="branded-salons-4">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-5.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-5.webp"
+                      alt="branded-salons-5">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-6.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-6.webp"
+                      alt="branded-salons-6">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-7.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-7.webp"
+                      alt="branded-salons-7">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-8.webp"
+                    data-fancybox="branded-salons-3">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-8.webp"
+                      alt="branded-salons-8">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div thumbsSlider="" class="branded-salons__thumbswiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-1.webp" alt="branded-salons-thumb-1"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-2.webp" alt="branded-salons-thumb-2"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-3.webp" alt="branded-salons-thumb-3"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-4.webp" alt="branded-salons-thumb-4"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-5.webp" alt="branded-salons-thumb-5"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-6.webp" alt="branded-salons-thumb-6"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-7.webp" alt="branded-salons-thumb-7"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-8.webp" alt="branded-salons-thumb-8"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branded-salons__item filters-item kor">
+          <div class="branded-salons__item-left">
+            <h4 class="branded-salons__item-title">
+              ТК Кор
+            </h4>
+            <div class="branded-salons__elems">
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.35 9.05004L15.01 16.59C14.45 18.38 11.94 18.41 11.35 16.63L10.65 14.56C10.46 13.99 10.01 13.53 9.43997 13.35L7.35997 12.65C5.58997 12.06 5.61997 9.53004 7.40997 8.99004L14.95 6.64003C16.43 6.19003 17.82 7.58004 17.35 9.05004Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Адрес:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА»,
+                    2 этаж
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#EF4E06" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Телефон:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    <a class="phone-block @@class _link" href="tel:+73433121462">
+  +7 343 312 14 62
+</a>
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Время работы:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    11:00-20:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="branded-salons__item-btns">
+              <a class="branded-salons__item-btn _main-btn" href="#callback" data-fancybox>
+                Записаться на встречу
+              </a>
+              <a class="branded-salons__item-btn _red-btn" href="#">
+                Узнать о салоне больше
+              </a>
+            </div>
+          </div>
+          <div class="branded-salons__item-right">
+            <div class="branded-salons__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-1.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-1.webp"
+                      alt="branded-salons-1">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-2.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-2.webp"
+                      alt="branded-salons-2">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-3.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-3.webp"
+                      alt="branded-salons-3">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-4.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-4.webp"
+                      alt="branded-salons-4">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-5.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-5.webp"
+                      alt="branded-salons-5">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-6.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-6.webp"
+                      alt="branded-salons-6">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-7.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-7.webp"
+                      alt="branded-salons-7">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-8.webp"
+                    data-fancybox="branded-salons-4">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-8.webp"
+                      alt="branded-salons-8">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div thumbsSlider="" class="branded-salons__thumbswiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-1.webp" alt="branded-salons-thumb-1"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-2.webp" alt="branded-salons-thumb-2"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-3.webp" alt="branded-salons-thumb-3"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-4.webp" alt="branded-salons-thumb-4"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-5.webp" alt="branded-salons-thumb-5"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-6.webp" alt="branded-salons-thumb-6"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-7.webp" alt="branded-salons-thumb-7"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-8.webp" alt="branded-salons-thumb-8"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branded-salons__item filters-item belka">
+          <div class="branded-salons__item-left">
+            <h4 class="branded-salons__item-title">
+              ТЦ Белка Маркет
+            </h4>
+            <div class="branded-salons__elems">
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.35 9.05004L15.01 16.59C14.45 18.38 11.94 18.41 11.35 16.63L10.65 14.56C10.46 13.99 10.01 13.53 9.43997 13.35L7.35997 12.65C5.58997 12.06 5.61997 9.53004 7.40997 8.99004L14.95 6.64003C16.43 6.19003 17.82 7.58004 17.35 9.05004Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Адрес:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    г. Екатеринбург, ВИЗ бульвар, 13, МЦ «ЭМА»,
+                    2 этаж
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#EF4E06" stroke-width="1.5" stroke-miterlimit="10"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Телефон:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    <a class="phone-block @@class _link" href="tel:+73433121462">
+  +7 343 312 14 62
+</a>
+                  </p>
+                </div>
+              </div>
+              <div class="branded-salons__elem">
+                <div class="branded-salons__elem-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#EF4E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class="branded-salons__elem-info">
+                  <h6 class="branded-salons__elem-title">
+                    Время работы:
+                  </h6>
+                  <p class="branded-salons__elem-text">
+                    11:00-20:00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="branded-salons__item-btns">
+              <a class="branded-salons__item-btn _main-btn" href="#callback" data-fancybox>
+                Записаться на встречу
+              </a>
+              <a class="branded-salons__item-btn _red-btn" href="#">
+                Узнать о салоне больше
+              </a>
+            </div>
+          </div>
+          <div class="branded-salons__item-right">
+            <div class="branded-salons__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-1.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-1.webp"
+                      alt="branded-salons-1">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-2.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-2.webp"
+                      alt="branded-salons-2">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-3.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-3.webp"
+                      alt="branded-salons-3">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-4.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-4.webp"
+                      alt="branded-salons-4">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-5.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-5.webp"
+                      alt="branded-salons-5">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-6.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-6.webp"
+                      alt="branded-salons-6">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-7.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-7.webp"
+                      alt="branded-salons-7">
+                  </a>
+                </div>
+                <div class="branded-salons__slide swiper-slide">
+                  <a class="branded-salons__slide-link" href="images/branded-salons-8.webp"
+                    data-fancybox="branded-salons-5">
+                    <img class="branded-salons__slide-img _img" src="images/branded-salons-8.webp"
+                      alt="branded-salons-8">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div thumbsSlider="" class="branded-salons__thumbswiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-1.webp" alt="branded-salons-thumb-1"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-2.webp" alt="branded-salons-thumb-2"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-3.webp" alt="branded-salons-thumb-3"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-4.webp" alt="branded-salons-thumb-4"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-5.webp" alt="branded-salons-thumb-5"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-6.webp" alt="branded-salons-thumb-6"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-7.webp" alt="branded-salons-thumb-7"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="branded-salons__thumbswiper-wrapper">
+                    <img src="images/branded-salons-8.webp" alt="branded-salons-thumb-8"
+                      class="branded-salons__thumbswiper-img _img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
   <section class="map-block">
   <div class="container">
     <h2 class="map-block__title _title">
