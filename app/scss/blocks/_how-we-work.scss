@@ -1,0 +1,58 @@
+.how-we-work{
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+  background-color: #f9f9f9;
+
+  &__swiper{
+    padding-bottom: 50px;
+    overflow: visible;
+
+    @include xl {
+        padding-bottom: 40;
+    }
+
+    @include lg {
+        padding-bottom: 30px;
+    }
+
+    @include sm {
+        padding-bottom: 20px;
+    }
+  }
+
+  &__slide{
+    max-width: 350px;
+
+    @include lg {
+        max-width: 320px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(600/350*100%);
+    min-height: 350px;
+     
+    @include lg {
+      min-height: 320px;
+      padding-bottom: 145%;
+  
+      .overlay {
+        display: block;
+      }
+    }
+  }
+  
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    
+    @include lg {
+      padding: 20px;
+    }
+  }
+}

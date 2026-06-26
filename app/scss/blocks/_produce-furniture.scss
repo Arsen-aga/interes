@@ -1,3 +1,4 @@
+.spectrum-materials,
 .full-cycle,
 .controlling-path,
 .produce-furniture {
@@ -103,6 +104,7 @@
   }
 }
 
+.spectrum-materials,
 .controlling-path {
   &__title {
     margin-bottom: 0;
@@ -159,5 +161,15 @@
     @include sm {
       font-size: 22px;
     }
+  }
+}
+
+.spectrum-materials {
+  &__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    span{font-weight: 600;}
   }
 }
