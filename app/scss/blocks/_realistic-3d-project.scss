@@ -1,3 +1,4 @@
+.production-base,
 .responsibility {
   padding-top: var(--indent);
 }
@@ -6,7 +7,11 @@
   background-color: var(--default-color);
   margin-top: var(--indent);
   padding: var(--indent) 0;
+}
 
+
+.production-base,
+.realistic-3d-project {
   &__title {
     margin-bottom: 0;
   }

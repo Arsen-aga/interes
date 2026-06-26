@@ -82,7 +82,32 @@
     line-height: 140%;
 
     @include xl {
-        font-size: 18px;
+      font-size: 18px;
+    }
+  }
+}
+
+
+#manufacture-page {
+  .meeting-save {
+    &__title {
+      margin-bottom: 40px;
+
+      @include xl {
+        margin-bottom: 35px;
+      }
+
+      @include lg {
+        margin-bottom: 30px;
+      }
+
+      @include md {
+        margin-bottom: 25px;
+      }
+
+      @include sm {
+        margin-bottom: 20px;
+      }
     }
   }
 }
