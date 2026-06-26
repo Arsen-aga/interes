@@ -1,7 +1,7 @@
+.full-cycle,
+.controlling-path,
 .produce-furniture {
-  margin-top: var(--indent);
-  padding: var(--indent) 0;
-  background-color: #f9f9f9;
+  padding-top: var(--indent);
 
   &__items {
     display: grid;
@@ -25,17 +25,6 @@
     overflow: hidden;
     min-height: 468px;
 
-
-    @include hover {
-      img {
-        scale: 1.3;
-      }
-
-      .produce-furniture__item-arrow {
-        background-color: var(--accent);
-      }
-    }
-
     @include xxl {
       min-height: 420px;
     }
@@ -54,8 +43,38 @@
     }
   }
 
-  &__item-img {
-    transition: all 0.5s ease-in-out;
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+
+    @include xxl {
+      padding: 30px;
+    }
+
+    @include lg {
+      padding: 25px;
+    }
+  }
+}
+
+.produce-furniture {
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+  background-color: #f9f9f9;
+
+  &__item {
+    @include hover {
+      img {
+        scale: 1.3;
+      }
+
+      .produce-furniture__item-arrow {
+        background-color: var(--accent);
+      }
+    }
   }
 
   &__item-arrow {
@@ -79,22 +98,19 @@
     }
   }
 
-  &__item-inner {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 40px;
-
-    @include xxl {
-      padding: 30px;
-    }
-
-    @include lg {
-      padding: 25px;
-    }
+  &__item-img {
+    transition: all 0.5s ease-in-out;
   }
+}
 
+.controlling-path {
+  &__title {
+    margin-bottom: 0;
+  }
+}
+
+.produce-furniture,
+.controlling-path {
   &__item-title {
     font-weight: 400;
     font-size: 36px;
@@ -114,6 +130,34 @@
 
     @include sm {
       font-size: 24px;
+    }
+  }
+
+  &__item-text {
+    margin-top: 15px;
+
+    @include lg {
+      margin-top: 10px;
+    }
+  }
+}
+
+.full-cycle {
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+
+    @include lg {
+      font-size: 26px;
+    }
+
+    @include md {
+      font-size: 24px;
+    }
+
+    @include sm {
+      font-size: 22px;
     }
   }
 }

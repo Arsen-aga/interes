@@ -1,10 +1,7 @@
+.preparing-order,
 .branches,
 .review-videos {
   padding-top: var(--indent);
-
-  &__title {
-    margin-bottom: 0;
-  }
 
   &__items {
     display: grid;
@@ -91,6 +88,10 @@
   padding-bottom: var(--indent);
   background-color: #F9F9F9;
 
+  &__title {
+    margin-bottom: 0;
+  }
+
   &__item-inner {
     &::before {
       position: absolute;
@@ -136,26 +137,10 @@
   }
 }
 
-#contacts-page {
+#about-page {
   .branches {
     &__title {
-      margin-bottom: 40px;
-
-      @include xl {
-        margin-bottom: 35px;
-      }
-
-      @include lg {
-        margin-bottom: 30px;
-      }
-
-      @include md {
-        margin-bottom: 25px;
-      }
-
-      @include sm {
-        margin-bottom: 20px;
-      }
+      margin-bottom: 0;
     }
   }
 }

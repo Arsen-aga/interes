@@ -58,6 +58,15 @@ a {
   background-position: center;
 }
 
+._wrapper-xl {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  @include xxl {
+    padding: 0 15px;
+  }
+}
+
 ._white-text {
   color: var(--light-color);
 }
@@ -610,7 +619,9 @@ a {
     color: var(--gray);
 
     @include sm {
-        br{display: none;}
+      br {
+        display: none;
+      }
     }
 
     a {
