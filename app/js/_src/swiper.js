@@ -346,13 +346,18 @@ document.addEventListener('DOMContentLoaded', function () {
     new Swiper(swiper, {
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 20,
-      initialSlide: 1,
-      centeredSlides: true,
       speed: 1000,
+      spaceBetween: 10,
       touchEventsTarget: "container",
       autoplay: {
         delay: 2000,
+      },
+      breakpoints: {
+        575.98: {
+          spaceBetween: 20,
+          initialSlide: 1,
+          centeredSlides: true,
+        },
       },
     });
   })
@@ -394,6 +399,24 @@ document.addEventListener('DOMContentLoaded', function () {
       767.98: {
         slidesPerView: 2,
         spaceBetween: 18,
+      },
+    },
+  })
+  new WheelInSwiper('.current-vacancies__swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    touchEventsTarget: "container",
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+      767.98: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1230: {
+        slidesPerView: 3,
       },
     },
   })
