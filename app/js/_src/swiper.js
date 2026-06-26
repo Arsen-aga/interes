@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
       delay: 2000,
     },
     breakpoints: {
-      540: {
+      575.98: {
         slidesPerView: 3,
       },
       750: {
@@ -370,6 +370,32 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: ".swiper-button-prev",
       },
     })
+  })
+
+  new WheelInSwiper('.how-we-work__swiper', {
+    loop: false,
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    touchEventsTarget: "container",
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+
+  new WheelInSwiper('.key-decisions__swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    touchEventsTarget: "container",
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+      767.98: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+    },
   })
 
 

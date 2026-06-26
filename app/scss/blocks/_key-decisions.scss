@@ -5,23 +5,23 @@
     margin-bottom: 0;
   }
 
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+  &__swiper {
+    overflow: visible;
 
-    @include xxl {
-      gap: 15px;
-    }
+    &:has(.swiper-scrollbar) {
+      padding-bottom: 50px;
 
-    @include xl {
-      gap: 10px;
-    }
+      @include xl {
+        padding-bottom: 40px;
+      }
 
-    @include lg {
-      padding-bottom: 10px;
-      grid-auto-flow: column;
-      overflow-x: auto;
+      @include lg {
+        padding-bottom: 30px;
+      }
+
+      @include sm {
+        padding-bottom: 20px;
+      }
     }
   }
 
@@ -33,12 +33,6 @@
     min-height: 450px;
     grid-column: span 2;
 
-    &:last-child:nth-child(odd) {
-      grid-column: span 4;
-      padding-bottom: calc(450/1440*100%);
-    }
-
-
     @include xxl {
       min-height: 420px;
     }
@@ -49,7 +43,6 @@
 
     @include lg {
       min-height: 420px;
-      width: 300px;
 
       .overlay {
         display: block;
@@ -79,15 +72,15 @@
     line-height: 122%;
 
     @include xxl {
-        font-size: 32px;
+      font-size: 32px;
     }
 
     @include xl {
-        font-size: 28px;
+      font-size: 28px;
     }
 
     @include lg {
-        font-size: 24px;
+      font-size: 24px;
     }
   }
 
@@ -99,25 +92,25 @@
     line-height: 140%;
 
     @include xl {
-        margin-top: 10px;
-        font-size: 18px;
+      margin-top: 10px;
+      font-size: 18px;
     }
 
     @include lg {
-        margin-top: 5px;
+      margin-top: 5px;
     }
 
     @include sm {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
 
-  &__item-list{
+  &__item-list {
     display: grid;
     gap: 7px;
 
     @include lg {
-        gap: 0;
+      gap: 0;
     }
   }
 }

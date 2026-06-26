@@ -1,0 +1,78 @@
+.we-understand {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(600/350*100%);
+    min-height: 350px;
+
+    @include xl {
+      .overlay {
+        display: block;
+      }
+    }
+
+    @include lg {
+      width: 300px;
+      min-height: 320px;
+      padding-bottom: 136%;
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+
+    @include xl {
+        padding: 20px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+
+    @include xl {
+        font-size: 24px;
+    }
+
+    @include lg {
+        font-size: 24px;
+    }
+
+    @include md {
+        font-size: 22px;
+    }
+  }
+
+  &__item-text{
+    margin-top: 15px;
+
+    @include xl {
+        margin-top: 10px;
+    }
+  }
+}
