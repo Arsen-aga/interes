@@ -1,4 +1,5 @@
 
+.front-block-vacancies,
 .front-block-designer,
 .front-block-reviews {
   padding: var(--indent-front) 0;
@@ -79,4 +80,7 @@
 }
 .front-block-designer {
   background-image: url('../images/front-block-designer-bg.webp');
+}
+.front-block-vacancies {
+  background-image: url('../images/front-block-vacancies-bg.webp');
 }
