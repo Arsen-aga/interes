@@ -1,71 +1,103 @@
-.record{
+.record {
   padding-top: var(--indent);
 
-  &__form{
+  &__form {
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--default-color);
     padding: 80px 40px;
 
     @include xxl {
-        padding: 80px 0;
+      padding: 80px 0;
     }
 
     @include lg {
-        padding: 50px 0;
+      padding: 50px 0;
     }
 
     @include md {
-        padding: 40px 0;
+      padding: 40px 0;
     }
 
     @include sm {
-        padding: 30px 0;
+      padding: 30px 0;
     }
   }
 
-  &__title, &__subtitle{
+  &__title,
+  &__subtitle {
     text-align: left;
     color: var(--light-color);
   }
 
-  &__title{
+  &__title {
     margin-bottom: 0;
   }
 
-  &__form-inner{
+  &__form-inner {
     max-width: 740px;
   }
 
-  &__bottom{
+  &__bottom {
     margin-top: 15px;
   }
 
-  &__inputs{
+  &__inputs {
     display: flex;
     gap: 10px;
 
     @include md {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
   &__inp,
-    &__btn{
+  &__btn {
     max-width: 370px;
 
     @include md {
-        max-width: none;
+      max-width: none;
     }
   }
 
 
-  .checkbox-block{
+  .checkbox-block {
     max-width: 366px;
-    margin: 15px  0  0 auto;
+    margin: 15px 0 0 auto;
 
     @include md {
-        margin: 15px auto 0;
+      margin: 15px auto 0;
+    }
+  }
+}
+
+#action-page {
+  .record {
+
+    &__bottom {
+      max-width: 400px;
+
+      @include sm {
+          max-width: none;
+      }
+    }
+
+    &__inputs {
+      display: grid;
+    }
+
+    &__inp,
+    &__btn {
+      max-width: none;
+    }
+
+    .checkbox-block{
+      margin-left: 17px;
+
+      @include sm {
+          max-width: none;
+          br{display: none;}
+      }
     }
   }
 }
