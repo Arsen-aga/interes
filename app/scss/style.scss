@@ -44,7 +44,7 @@
 @import 'blocks/front-block-single'; // front-block-cases front-block-contacts
 @import 'blocks/improvements';
 @import 'blocks/front-block-salon'; 
-@import 'blocks/key-decisions';
+@import 'blocks/key-decisions'; // included-measurement
 @import 'blocks/salon-before';
 @import 'blocks/meeting-save';
 @import 'blocks/meeting-you';
@@ -53,7 +53,7 @@
 @import 'blocks/review-videos'; //branches preparing-order
 @import 'blocks/questions';
 @import 'blocks/record';
-@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action
+@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action front-block-delivery
 @import 'blocks/front-block-about';
 @import 'blocks/main-specialization';
 @import 'blocks/history';
@@ -63,13 +63,18 @@
 @import 'blocks/implement-projects-pinterest';
 @import 'blocks/display-furniture';
 @import 'blocks/video-more';
-@import 'blocks/we-understand';
+@import 'blocks/we-understand'; //more-freeze
 @import 'blocks/how-we-work';
 @import 'blocks/design-documentation';
 @import 'blocks/why-choose';
 @import 'blocks/current-vacancies';
 @import 'blocks/working-conditions';
 @import 'blocks/current-promotions';
+@import 'blocks/results-measurement';
+@import 'blocks/you-receive';
+@import 'blocks/specialist-visit';
+@import 'blocks/strict-work';
+@import 'blocks/take-care';
 
 
 

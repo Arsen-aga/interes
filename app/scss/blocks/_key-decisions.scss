@@ -1,9 +1,6 @@
+.included-measurement,
 .key-decisions {
   padding-top: var(--indent);
-
-  &__title {
-    margin-bottom: 0;
-  }
 
   &__swiper {
     overflow: visible;
@@ -29,21 +26,8 @@
     display: block;
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(450/711*100%);
-    min-height: 450px;
-    grid-column: span 2;
-
-    @include xxl {
-      min-height: 420px;
-    }
-
-    @include xl {
-      min-height: 380px;
-    }
 
     @include lg {
-      min-height: 420px;
-
       .overlay {
         display: block;
       }
@@ -63,6 +47,30 @@
 
     @include lg {
       padding: 25px;
+    }
+  }
+}
+
+.key-decisions {
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    padding-bottom: calc(450/711*100%);
+    min-height: 450px;
+
+    @include xxl {
+      min-height: 420px;
+    }
+
+    @include xl {
+      min-height: 380px;
+    }
+
+    @include lg {
+      min-height: 420px;
     }
   }
 
@@ -111,6 +119,44 @@
 
     @include lg {
       gap: 0;
+    }
+  }
+}
+
+.included-measurement {
+  &__item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(600/468*100%);
+    min-height: 450px;
+
+    @include xxl {
+      min-height: 420px;
+    }
+
+    @include xl {
+      min-height: 380px;
+    }
+
+    @include lg {
+      .overlay {
+        display: block;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+#delivery-page {
+  .included-measurement {
+    &__title {
+      margin-bottom: 0;
     }
   }
 }

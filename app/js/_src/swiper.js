@@ -402,6 +402,27 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
   })
+  new WheelInSwiper('.included-measurement__swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    touchEventsTarget: "container",
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      575.98: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      991.8: {
+        slidesPerView: 3,
+      },
+    },
+  })
   new WheelInSwiper('.current-vacancies__swiper', {
     loop: false,
     slidesPerView: 1,

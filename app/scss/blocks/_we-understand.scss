@@ -1,9 +1,6 @@
+.more-freeze,
 .we-understand {
   padding-top: var(--indent);
-
-  &__title {
-    margin-bottom: 0;
-  }
 
   &__items {
     display: grid;
@@ -46,7 +43,7 @@
     padding: 25px;
 
     @include xl {
-        padding: 20px;
+      padding: 20px;
     }
   }
 
@@ -56,23 +53,39 @@
     line-height: 129%;
 
     @include xl {
-        font-size: 24px;
+      font-size: 24px;
     }
 
     @include lg {
-        font-size: 24px;
+      font-size: 24px;
     }
 
     @include md {
-        font-size: 22px;
+      font-size: 22px;
     }
   }
 
-  &__item-text{
+  &__item-text {
     margin-top: 15px;
 
     @include xl {
-        margin-top: 10px;
+      margin-top: 10px;
+    }
+
+    span{
+      font-weight: 600;
     }
   }
+}
+
+.we-understand {
+  &__title {
+    margin-bottom: 0;
+  }
+}
+
+.more-freeze{
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+  background-color: #f9f9f9;
 }
