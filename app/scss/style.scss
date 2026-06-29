@@ -37,7 +37,7 @@
 @import 'blocks/choose-direction';
 @import 'blocks/front-block-thankyou';
 @import 'blocks/favorites';
-@import 'blocks/front-block-catalog';
+@import 'blocks/front-block-catalog'; // front-block-article
 @import 'blocks/auto-swiper';
 @import 'blocks/front-block-category';
 @import 'blocks/filter-block';
@@ -53,7 +53,7 @@
 @import 'blocks/review-videos'; //branches preparing-order
 @import 'blocks/questions';
 @import 'blocks/record';
-@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action front-block-delivery front-block-guarantee
+@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action front-block-delivery front-block-guarantee front-block-adviсe
 @import 'blocks/front-block-about';
 @import 'blocks/main-specialization';
 @import 'blocks/history';
@@ -76,6 +76,7 @@
 @import 'blocks/strict-work'; // warranty-periods
 @import 'blocks/take-care';
 @import 'blocks/stay-contact';
+@import 'blocks/articles';
 
 
 

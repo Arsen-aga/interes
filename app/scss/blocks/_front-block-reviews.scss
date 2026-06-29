@@ -1,3 +1,4 @@
+.front-block-adviсe,
 .front-block-guarantee,
 .front-block-delivery,
 .free-measurement,
@@ -114,5 +115,13 @@
 
   &__btn {
     max-width: 340px;
+  }
+}
+
+.front-block-adviсe{
+  background-image: url('../images/front-block-adviсe-bg.webp');
+
+  &__subtitle{
+    margin-bottom: 0;
   }
 }

@@ -1,52 +1,131 @@
-.front-block-catalog{
+.front-block-article,
+.front-block-catalog {
+
+  &__title {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+
+}
+
+.front-block-catalog {
   background-image: url('../images/front-block-catalog-bg.webp');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: var(--indent-front) 0 70px;
 
   @include lg {
-      padding-bottom: 40px;
+    padding-bottom: 40px;
   }
 
-  &__title{
-    margin-bottom: 0;
+  &__subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 127%;
+
+    @include xl {
+      font-size: 28px;
+    }
+
+    @include lg {
+      margin-top: 15px;
+      font-size: 26px;
+    }
+
+    @include md {
+      margin-top: 10px;
+      font-size: 22px;
+    }
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    span {
+      font-weight: 500;
+    }
   }
 
-  &__btns{
+  &__btns {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     max-width: 650px;
-    margin: 0 auto;
-
-    @include xs {
-        flex-direction: column;
-    }
-  }
-
-  &__btn{
-    max-width: 270px;
-
-    @include xs {
-        max-width: 300px;
-    }
-  }
-
-  &__swiper{
-    margin-top: 70px;
+    margin: 40px auto 0;
 
     @include xl {
-        margin-top: 50px;
+      margin-top: 30px;
     }
 
     @include lg {
-        margin-top: 40px;
+      margin-top: 20px;
     }
 
     @include md {
-        margin-top: 30px;
+      margin-top: 15px;
+    }
+
+    @include xs {
+      flex-direction: column;
     }
   }
+
+  &__btn {
+    max-width: 270px;
+
+    @include xs {
+      max-width: 300px;
+    }
+  }
+
+  &__swiper {
+    margin-top: 70px;
+
+    @include xl {
+      margin-top: 50px;
+    }
+
+    @include lg {
+      margin-top: 40px;
+    }
+
+    @include md {
+      margin-top: 30px;
+    }
+  }
+}
+
+.front-block-article {
+  padding: 150px 0 160px;
+  background-image: url('../images/front-block-article-bg.webp');
+
+  &__suptitle {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: fit-content;
+    height: 44px;
+    background-color: var(--accent);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 15px;
+
+    @include lg {
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+
+    @include sm {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+  }
+
 }
