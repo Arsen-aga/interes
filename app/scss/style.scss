@@ -53,7 +53,7 @@
 @import 'blocks/review-videos'; //branches preparing-order
 @import 'blocks/questions';
 @import 'blocks/record';
-@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action front-block-delivery
+@import 'blocks/front-block-reviews'; // front-block-vacancies front-block-designer front-block-action front-block-delivery front-block-guarantee
 @import 'blocks/front-block-about';
 @import 'blocks/main-specialization';
 @import 'blocks/history';
@@ -73,8 +73,9 @@
 @import 'blocks/results-measurement';
 @import 'blocks/you-receive';
 @import 'blocks/specialist-visit';
-@import 'blocks/strict-work';
+@import 'blocks/strict-work'; // warranty-periods
 @import 'blocks/take-care';
+@import 'blocks/stay-contact';
 
 
 

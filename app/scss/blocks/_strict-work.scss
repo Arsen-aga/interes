@@ -1,31 +1,87 @@
 .strict-work {
-  padding-top: var(--indent);
-
   &__items {
     margin-top: 50px;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 60px;
-    @include xxl {
-        gap: 20px;
-    }
 
     @include xl {
-        margin-top: 40px;
+      margin-top: 40px;
     }
 
     @include lg {
-        margin-top: 30px;
-        grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @include md {
-        margin-top: 20px;
+      margin-top: 20px;
     }
 
     @include sm {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
+  }
+}
+
+.warranty-periods {
+  &__items {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-text {
+    margin-bottom: 30px;
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+
+    @include sm {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-wrapper {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+}
+
+.warranty-periods,
+.strict-work {
+  padding-top: var(--indent);
+
+  &__items {
+    display: grid;
+
+    @include xxl {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
   }
 
   &__item-num {
@@ -35,15 +91,15 @@
     color: var(--primary);
 
     @include xl {
-        font-size: 30px;
+      font-size: 30px;
     }
 
     @include lg {
-        font-size: 26px;
+      font-size: 26px;
     }
 
     @include md {
-        font-size: 24px;
+      font-size: 24px;
     }
   }
 
@@ -66,7 +122,7 @@
     }
 
     @include sm {
-        max-width: none;
+      max-width: none;
     }
   }
 
@@ -74,8 +130,11 @@
     span {
       font-weight: 600;
     }
+
     @include xxl {
-        br{display: none;}
+      br {
+        display: none;
+      }
     }
   }
 }

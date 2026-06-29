@@ -1,3 +1,4 @@
+.front-block-guarantee,
 .front-block-delivery,
 .free-measurement,
 .front-block-action,
@@ -80,18 +81,38 @@
 .front-block-reviews {
   background-image: url('../images/front-block-reviews-bg.webp');
 }
+
 .front-block-designer {
   background-image: url('../images/front-block-designer-bg.webp');
 }
+
 .front-block-vacancies {
   background-image: url('../images/front-block-vacancies-bg.webp');
 }
+
 .front-block-action {
   background-image: url('../images/front-block-action-bg.webp');
 }
+
 .free-measurement {
   background-image: url('../images/free-measurement-bg.webp');
 }
+
 .front-block-delivery {
   background-image: url('../images/front-block-delivery-bg.webp');
+}
+
+.front-block-guarantee {
+  background-image: url('../images/front-block-guarantee-bg.webp');
+
+  .overlay {
+    @include xl {
+      display: block;
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+
+  &__btn {
+    max-width: 340px;
+  }
 }
