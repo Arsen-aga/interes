@@ -1,0 +1,75 @@
+.specialist-visit {
+  padding-top: var(--indent);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @include xl {
+      gap: 30px;
+    }
+
+    @include lg {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+
+    @include xl {
+      font-size: 30px;
+    }
+
+    @include lg {
+      font-size: 28px;
+    }
+
+    @include md {
+      font-size: 26px;
+    }
+
+    @include sm {
+      font-size: 24px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: left;
+    margin-bottom: 0;
+
+    @include lg {
+        text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+
+    @include sm {
+      font-size: 16px;
+    }
+  }
+
+  &__right {
+    max-width: 814px;
+    width: 100%;
+
+    @include xxl {
+      max-width: 540px;
+    }
+
+    @include xl {
+      max-width: 420px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(510/814*100%);
+  }
+}

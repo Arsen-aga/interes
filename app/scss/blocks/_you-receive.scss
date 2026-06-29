@@ -1,0 +1,21 @@
+.you-receive {
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+  background-image: url('../images/results-measurement-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include lg {
+    .overlay {
+      display: block;
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
